@@ -23,6 +23,7 @@ func main() {
 	var attacken1 = 10
 	var attacken2 = 30 
 	var attacken3 = 10
+
 	fmt.Println("You wake up, lost, in a forest, with no memory to recall.")
 	time.Sleep(4 * time.Second)
 	fmt.Println("The leaves of the trees, blocked the sunlight from the two suns.")
