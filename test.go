@@ -23,7 +23,6 @@ func main() {
 	var attacken1 = 10
 	var attacken2 = 30 
 	var attacken3 = 10
-
 	fmt.Println("You wake up, lost, in a forest, with no memory to recall.")
 	time.Sleep(4 * time.Second)
 	fmt.Println("The leaves of the trees, blocked the sunlight from the two suns.")
@@ -64,6 +63,7 @@ func main() {
 			}
 		}
 		fmt.Println("your hp",hp1,"          enemy hp",hp2)
+		fmt.Println()
 		fmt.Println("choose your attack")
 		fmt.Println("1.light attack ",attack1,"damage 100% accuracy")
 		fmt.Println("2.heavy attack ",attack2,"damage 75% accuracy")
@@ -216,6 +216,7 @@ func main() {
 					}
 				}
 				fmt.Println("your hp",hp1,"          enemy hp",hp2)
+				fmt.Println()
 				fmt.Println("choose your attack")
 				fmt.Println("1.light attack ",attack1,"damage 100% accuracy")
 				fmt.Println("2.heavy attack ",attack2,"damage 75% accuracy")
@@ -359,6 +360,7 @@ func main() {
 					}
 				}
 				fmt.Println("your hp",hp1,"          enemy hp",hp2)
+				fmt.Println()
 				fmt.Println("choose your attack")
 				fmt.Println("1.light attack ",attack1,"damage 100% accuracy")
 				fmt.Println("2.heavy attack ",attack2,"damage 75% accuracy")
@@ -522,6 +524,7 @@ func main() {
 				}
 			}
 			fmt.Println("your hp",hp1,"          enemy hp",hp2)
+			fmt.Println()
 			fmt.Println("choose your attack")
 			fmt.Println("1.light attack ",attack1,"damage 100% accuracy")
 			fmt.Println("2.heavy attack ",attack2,"damage 75% accuracy")
@@ -600,8 +603,8 @@ func main() {
 							continue
 					}
 				} else {
-					if hp2 > hp2or - attacken3 {						time.Sleep(1 * time.Second)
-
+					if hp2 > hp2or - attacken3 {					
+						time.Sleep(1 * time.Second)
 						fmt.Println("attack missed")
 						time.Sleep(1 * time.Second)	
 					} else {
@@ -745,6 +748,7 @@ func main() {
 							}
 						}
 						fmt.Println("your hp",hp1,"          enemy hp",hp2)
+						fmt.Println()
 						fmt.Println("choose your attack")
 						fmt.Println("1.light attack ",attack1,"damage 100% accuracy")
 						fmt.Println("2.heavy attack ",attack2,"damage 75% accuracy")
@@ -886,6 +890,7 @@ func main() {
 							}
 						}
 						fmt.Println("your hp",hp1,"          enemy hp",hp2)
+						fmt.Println()
 						fmt.Println("choose your attack")
 						fmt.Println("1.light attack ",attack1,"damage 100% accuracy")
 						fmt.Println("2.heavy attack ",attack2,"damage 75% accuracy")
@@ -1028,6 +1033,7 @@ func main() {
 							}
 						}
 						fmt.Println("your hp",hp1,"          enemy hp",hp2)
+						fmt.Println()
 						fmt.Println("choose your attack")
 						fmt.Println("1.light attack ",attack1,"damage 100% accuracy")
 						fmt.Println("2.heavy attack ",attack2,"damage 75% accuracy")
@@ -1172,6 +1178,7 @@ func main() {
 							}
 						}
 						fmt.Println("your hp",hp1,"          enemy hp",hp2)
+						fmt.Println()
 						fmt.Println("choose your attack")
 						fmt.Println("1.light attack ",attack1,"damage 100% accuracy")
 						fmt.Println("2.heavy attack ",attack2,"damage 75% accuracy")
@@ -1392,6 +1399,7 @@ func main() {
 				}
 			}
 			fmt.Println("your hp",hp1,"          enemy hp",hp2)
+			fmt.Println()
 			fmt.Println("choose your attack")
 			fmt.Println("1.light attack ",attack1,"damage 100% accuracy")
 			fmt.Println("2.heavy attack ",attack2,"damage 75% accuracy")
