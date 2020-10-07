@@ -45,6 +45,7 @@ func main() {
 		attack3tr = 0
 		attack4tr = 0
 		montr = 0
+		check = 1
 		fmt.Println("You wake up, lost, in a forest, with no memory to recall.")
 		time.Sleep(4 * time.Second)
 		fmt.Println("The leaves of the trees, blocked the sunlight from the two suns.")
@@ -184,7 +185,6 @@ func main() {
 				time.Sleep(5 * time.Second)
 				continue
 			}
-			check = 1
 			time.Sleep(2 * time.Second)
 			fmt.Println("The Wood Dweller drops dead, and you are victorious. You scavenge its body and claim its weapon")
 			time.Sleep(2 * time.Second)
@@ -349,9 +349,20 @@ func main() {
 					time.Sleep(5 * time.Second)
 					continue
 				}
-				check = 1
+				attack1tr = 0
+				hp1tr = 0
+				attack2tr = 0
+				attack3tr = 0
+				attack4tr = 0
+				montr = 0
 				break
 	}
+	time.Sleep(1 * time.Second)
+		fmt.Println("You gained 20 coins")
+		time.Sleep(1 * time.Second)
+		mon = mon + 20
+		fmt.Println("Total coins:",mon)
+		time.Sleep(3 * time.Second)
 	for {
 		attack1 = attack1 - attack1tr
 		mon = mon - montr
@@ -367,6 +378,7 @@ func main() {
 		attack3tr = 0
 		attack4tr = 0
 		montr = 0
+		check = 1
 		fmt.Println("You emerge victorious. After the pain is relieved, You venture deep into the woods.")
 		time.Sleep(3 * time.Second)
 		fmt.Println("Wary of your surrounding,")
@@ -645,8 +657,9 @@ func main() {
 				hp1 = hp1-attacken1
 				time.Sleep(1 * time.Second)
 				if hp1 <= 0 {
-					fmt.Println("game over")
-					return
+					fmt.Println("You Died")
+					check = 2
+					break
 				}
 			} else if random2 == 1 {
 				var b = time.Now().UnixNano()
@@ -657,8 +670,9 @@ func main() {
 						hp1 = hp1-attacken2
 						time.Sleep(1 * time.Second)	
 						if hp1 <= 0 {
-							fmt.Println("game over")
-							return
+							fmt.Println("You Died")
+							check = 2
+							break
 						}
 					} else {
 						fmt.Println("attack missed")
@@ -678,8 +692,18 @@ func main() {
 				}
 			}
 		}
-		break
-	}
+		if check == 2 {
+			time.Sleep(2 * time.Second)
+			fmt.Println("Respawning")
+			time.Sleep(5 * time.Second)
+			continue
+		}
+		attack1tr = 0
+		hp1tr = 0
+		attack2tr = 0
+		attack3tr = 0
+		attack4tr = 0
+		montr = 0
 		hp1 = hp1or
 		mon = mon + 30
 		time.Sleep(1 * time.Second)
@@ -687,6 +711,8 @@ func main() {
 			time.Sleep(1 * time.Second)
 		fmt.Println("Total coins:",mon)
 		time.Sleep(4 * time.Second)
+		break
+	}
 		fmt.Println("After beating the Royal Guard, you notice that he was guarding a chest, without a key.")
 		time.Sleep(4 * time.Second)
 		fmt.Println("You open the chest and notice there is a key inside, which looks like it can open the door you saw earlier.")
