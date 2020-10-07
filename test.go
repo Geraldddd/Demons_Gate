@@ -29,14 +29,22 @@ func main() {
 	var attacken1 = 10
 	var attacken2 = 30 
 	var attacken3 = 10
+	var montr int
 	for {
 		attack1 = attack1 - attack1tr
+		mon = mon - montr
 		hp1 = hp1 - hp1tr
 		attack2 = attack2 - attack2tr
 		attack3 = attack3 - attack3tr
 		attack4 = attack4 - attack4tr
 		hp1 = hp1or
 		hp2 = hp2or
+		attack1tr = 0
+		hp1tr = 0
+		attack2tr = 0
+		attack3tr = 0
+		attack4tr = 0
+		montr = 0
 		fmt.Println("You wake up, lost, in a forest, with no memory to recall.")
 		time.Sleep(4 * time.Second)
 		fmt.Println("The leaves of the trees, blocked the sunlight from the two suns.")
@@ -135,7 +143,7 @@ func main() {
 				hp1 = hp1-attacken1
 				time.Sleep(1 * time.Second)
 				if hp1 <= 0 {
-					fmt.Println("game over")
+					fmt.Println("You Died")
 					check = 2
 					break
 				}
@@ -148,7 +156,7 @@ func main() {
 						hp1 = hp1-attacken2
 						time.Sleep(1 * time.Second)	
 						if hp1 <= 0 {
-							fmt.Println("game over")
+							fmt.Println("You Died")
 							check = 2
 							break
 						}
@@ -180,9 +188,12 @@ func main() {
 			time.Sleep(2 * time.Second)
 			fmt.Println("The Wood Dweller drops dead, and you are victorious. You scavenge its body and claim its weapon")
 			time.Sleep(2 * time.Second)
-			attack1 = 20
-			attack2 = 40
-			attack4 = 60
+			attack1 = attack1 + 10
+			attack2 = attack2 + 10
+			attack4 = attack4 + 10
+			attack1tr = attack1tr + 10
+			attack2tr = attack2tr + 10
+			attack4tr = attack4tr + 10
 			fmt.Println("Weapon Upgrade: Battle Axe")
 			time.Sleep(4 * time.Second)
 			fmt.Println("You venture deeper into the woods, in hope of finding something that may bring back your memory, but you feel a severe headache.")
@@ -297,7 +308,7 @@ func main() {
 						hp1 = hp1-attacken1
 						time.Sleep(1 * time.Second)
 						if hp1 <= 0 {
-							fmt.Println("game over")
+							fmt.Println("You Died")
 							check = 2
 							break
 						}
@@ -310,7 +321,7 @@ func main() {
 								hp1 = hp1-attacken2
 								time.Sleep(1 * time.Second)	
 								if hp1 <= 0 {
-									fmt.Println("game over")
+									fmt.Println("You Died")
 									check = 2
 									break
 								}
@@ -341,10 +352,26 @@ func main() {
 				check = 1
 				break
 	}
+	for {
+		attack1 = attack1 - attack1tr
+		mon = mon - montr
+		hp1 = hp1 - hp1tr
+		attack2 = attack2 - attack2tr
+		attack3 = attack3 - attack3tr
+		attack4 = attack4 - attack4tr
+		hp1 = hp1or
+		hp2 = hp2or
+		attack1tr = 0
+		hp1tr = 0
+		attack2tr = 0
+		attack3tr = 0
+		attack4tr = 0
+		montr = 0
 		time.Sleep(1 * time.Second)
 		fmt.Println("You gained 20 coins")
 		time.Sleep(1 * time.Second)
 		mon = mon + 20
+		montr = montr + 20
 		fmt.Println("Total coins:",mon)
 		time.Sleep(3 * time.Second)
 		fmt.Println("You emerge victorious. After the pain is relieved, You venture deep into the woods.")
@@ -452,8 +479,9 @@ func main() {
 					hp1 = hp1-attacken1
 					time.Sleep(1 * time.Second)
 					if hp1 <= 0 {
-						fmt.Println("game over")
-						return
+						fmt.Println("You Died")
+						check = 2
+						break
 					}
 				} else if random2 == 1 {
 					var b = time.Now().UnixNano()
@@ -464,8 +492,9 @@ func main() {
 							hp1 = hp1-attacken2
 							time.Sleep(1 * time.Second)	
 							if hp1 <= 0 {
-								fmt.Println("game over")
-								return
+								fmt.Println("You Died")
+								check = 2
+								break
 							}
 						} else {
 							fmt.Println("attack missed")
@@ -485,8 +514,15 @@ func main() {
 					}
 				}
 			}
+			if check == 2 {
+				time.Sleep(2 * time.Second)
+				fmt.Println("Respawning")
+				time.Sleep(5 * time.Second)
+				continue
+			}
 			hp2 = hp2or
 			mon = mon + 50
+			montr = montr + 50
 			time.Sleep(1 * time.Second)
 			fmt.Println("You gained 50 coins")
 			time.Sleep(1 * time.Second)
@@ -649,6 +685,8 @@ func main() {
 				}
 			}
 		}
+		break
+	}
 		hp1 = hp1or
 		mon = mon + 30
 		time.Sleep(1 * time.Second)
