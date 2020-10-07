@@ -367,13 +367,6 @@ func main() {
 		attack3tr = 0
 		attack4tr = 0
 		montr = 0
-		time.Sleep(1 * time.Second)
-		fmt.Println("You gained 20 coins")
-		time.Sleep(1 * time.Second)
-		mon = mon + 20
-		montr = montr + 20
-		fmt.Println("Total coins:",mon)
-		time.Sleep(3 * time.Second)
 		fmt.Println("You emerge victorious. After the pain is relieved, You venture deep into the woods.")
 		time.Sleep(3 * time.Second)
 		fmt.Println("Wary of your surrounding,")
