@@ -27,7 +27,7 @@ func main() {
 	var attack3tr int
 	var attack4tr int
 	var attacken1 = 10
-	var attacken2 = 30 
+	var attacken2 = 20 
 	var attacken3 = 10
 	var montr int
 	for {
@@ -802,7 +802,9 @@ func main() {
 			attack3tr = 0
 			attack4tr = 0
 			montr = 0
-			check = 1
+			key = 1
+			key2 = 1
+			key3 = 1
 			fmt.Println("Good Luck, Ashen One! he hollers, as you exit the shack.")
 			time.Sleep(3 * time.Second)
 			fmt.Println("You walk through the forest, finding the wherebouts of the Taurus.")
