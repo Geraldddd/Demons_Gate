@@ -802,9 +802,7 @@ func main() {
 			attack3tr = 0
 			attack4tr = 0
 			montr = 0
-			key = 1
-			key2 = 1
-			key3 = 1
+			check = 1
 			fmt.Println("Good Luck, Ashen One! he hollers, as you exit the shack.")
 			time.Sleep(3 * time.Second)
 			fmt.Println("You walk through the forest, finding the wherebouts of the Taurus.")
@@ -957,6 +955,9 @@ func main() {
 								time.Sleep(2 * time.Second)
 								fmt.Println("Respawning")
 								time.Sleep(5 * time.Second)
+								key = 1
+								key2 = 1
+								key3 = 1
 								continue
 							}
 							hp1 = hp1or
@@ -1107,6 +1108,9 @@ func main() {
 							time.Sleep(2 * time.Second)
 							fmt.Println("Respawning")
 							time.Sleep(5 * time.Second)
+							key = 1
+							key2 = 1
+							key3 = 1
 							continue
 						}
 						hp1 = hp1or
@@ -1258,6 +1262,9 @@ func main() {
 							time.Sleep(2 * time.Second)
 							fmt.Println("Respawning")
 							time.Sleep(5 * time.Second)
+							key = 1
+							key2 = 1
+							key3 = 1
 							continue
 						}
 						hp1 = hp1or
