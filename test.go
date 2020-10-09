@@ -784,7 +784,13 @@ func main() {
 				break
 			}
 		}
-		for {
+			fmt.Println("Good Luck, Ashen One! he hollers, as you exit the shack.")
+			time.Sleep(3 * time.Second)
+			fmt.Println("You walk through the forest, finding the wherebouts of the Taurus.")
+			time.Sleep(3 * time.Second)
+			fmt.Println("You then see a keep in the distance gaurded by several creatures.")
+			time.Sleep(3 * time.Second)
+			for taurus := 1 ;; taurus++{
 			key = 1
 			key2 = 1
 			key3 = 1
@@ -803,13 +809,6 @@ func main() {
 			attack4tr = 0
 			montr = 0
 			check = 1
-			fmt.Println("Good Luck, Ashen One! he hollers, as you exit the shack.")
-			time.Sleep(3 * time.Second)
-			fmt.Println("You walk through the forest, finding the wherebouts of the Taurus.")
-			time.Sleep(3 * time.Second)
-			fmt.Println("You then see a keep in the distance gaurded by several creatures.")
-			time.Sleep(3 * time.Second)
-			for taurus := 1 ;; taurus++{
 				fmt.Println("Where would you like to go:")
 				fmt.Println("1.Wood Dweller")
 				fmt.Println("2.Ancient Log")
@@ -1501,11 +1500,13 @@ func main() {
 						}
 					}
 				}
-			}
-				if check == 2 {
+						if check == 2 {
 					time.Sleep(2 * time.Second)
 					fmt.Println("Respawning")
 					time.Sleep(5 * time.Second)
+					continue
+				}
+				if a >= 4 || a == 0{
 					continue
 				}
 				attack1tr = 0
@@ -1515,7 +1516,7 @@ func main() {
 				attack4tr = 0
 				montr = 0
 				break
-		}
+			}
 		for space := 1 ; space <=100 ; space++{
 			fmt.Println()
 		}
