@@ -30,6 +30,7 @@ func main() {
 	var attacken2 = 20 
 	var attacken3 = 10
 	var montr int
+	var check4 int
 	for {
 		attack1 = attack1 - attack1tr
 		mon = mon - montr
@@ -791,9 +792,6 @@ func main() {
 			fmt.Println("You then see a keep in the distance gaurded by several creatures.")
 			time.Sleep(3 * time.Second)
 			for taurus := 1 ;; taurus++{
-			key = 1
-			key2 = 1
-			key3 = 1
 			attack1 = attack1 - attack1tr
 			mon = mon - montr
 			hp1 = hp1 - hp1tr
@@ -955,8 +953,6 @@ func main() {
 								fmt.Println("Respawning")
 								time.Sleep(5 * time.Second)
 								key = 1
-								key2 = 1
-								key3 = 1
 								continue
 							}
 							hp1 = hp1or
@@ -1107,9 +1103,7 @@ func main() {
 							time.Sleep(2 * time.Second)
 							fmt.Println("Respawning")
 							time.Sleep(5 * time.Second)
-							key = 1
 							key2 = 1
-							key3 = 1
 							continue
 						}
 						hp1 = hp1or
@@ -1261,8 +1255,6 @@ func main() {
 							time.Sleep(2 * time.Second)
 							fmt.Println("Respawning")
 							time.Sleep(5 * time.Second)
-							key = 1
-							key2 = 1
 							key3 = 1
 							continue
 						}
@@ -1431,6 +1423,7 @@ func main() {
 						time.Sleep(4 * time.Second)
 						fmt.Println("Now, you must go, and conquer Mount Olympus")
 					time.Sleep(7 * time.Second)
+					check4 = 1
 					break
 					}else{
 						time.Sleep(1 * time.Second)
@@ -1509,13 +1502,15 @@ func main() {
 				if a >= 4 || a == 0{
 					continue
 				}
+				if check4 == 1 {
+					break
+				}
 				attack1tr = 0
 				hp1tr = 0
 				attack2tr = 0
 				attack3tr = 0
 				attack4tr = 0
 				montr = 0
-				break
 			}
 		for space := 1 ; space <=100 ; space++{
 			fmt.Println()
