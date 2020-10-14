@@ -1661,6 +1661,7 @@ func main() {
 		}
 		hp1 = hp1or
 		hp1 = hp1 + 10
+		hp1or = hp1
 		time.Sleep(1 * time.Second)
 		fmt.Println("After the battle, you claim its helmet.")
 		time.Sleep(4 * time.Second)
@@ -1671,4 +1672,158 @@ func main() {
 		fmt.Println("When you hike up the hill, you notice some movement. It is a possessed spartan.  As soon as you notice it, the spartan gets impaled by a ten-foot spider.")
 		time.Sleep(4 * time.Second)
 		fmt.Println("You run away into a bush, hiding. The spider notices you.")
+		hp2 = 250
+		attacken1 = 40
+		attacken2 = 65
+		attacken3 = 30
+		for battle1 := 1 ;; battle1++ {
+			if battle1 % 10 == 0 {
+				fmt.Println("ultimate attack is ready")
+				time.Sleep(1 * time.Second)
+				fmt.Println("would you like to use ultimate attack")
+				fmt.Println("1.Yes")
+				fmt.Println("2.no")
+				fmt.Scanln(&b)
+				if b == 1 {
+					time.Sleep(1 * time.Second)
+					fmt.Println("using ultimate attack")
+					time.Sleep(5 * time.Second)
+					hp2 = hp2 - attack4
+					fmt.Println("enemy took",attack4,"damage")
+					if hp2 <= 0 {
+						fmt.Println("You Win")
+						break
+					}
+				} else if b == 2 {
+					time.Sleep(1 * time.Second)
+					continue
+				} else {
+					time.Sleep(1 * time.Second)
+					fmt.Println("sorry that is an invalid command")
+					time.Sleep(1 * time.Second)
+					continue
+				}
+			}
+			fmt.Println("your hp",hp1,"          enemy hp",hp2)
+			fmt.Println()
+			fmt.Println("choose your attack")
+			fmt.Println("1.light attack ",attack1,"damage 100% accuracy")
+			fmt.Println("2.heavy attack ",attack2,"damage 75% accuracy")
+			fmt.Println("3.heal",attack3,"health 100% accuracy")
+			fmt.Scanln(&a)
+			if a == 1 {
+				time.Sleep(1 * time.Second)
+				fmt.Println("Wood Dweller took",attack1,"damage")
+				hp2 = hp2-attack1
+				time.Sleep(1 * time.Second)
+				if hp2 <= 0 {
+					fmt.Println("You Win")
+					break
+				}
+			} else if a == 2 {
+				var s = time.Now().UnixNano()
+				rand.Seed(s)
+				var random = rand.Intn(3)
+				if random == 1 || random == 2 || random == 3 {
+					time.Sleep(1 * time.Second)
+					hp2 = hp2 - attack2
+				fmt.Println("Wood Dweller took",attack2,"damage")
+				time.Sleep(1 * time.Second)
+				if hp2 <= 0 {
+					fmt.Println("You Win")
+					break
+				}
+				} else {
+					time.Sleep(1 * time.Second)
+					fmt.Println("attack missed")
+					time.Sleep(1 * time.Second)
+				}
+			} else if a == 3 {
+				if hp1 > hp1or - attack3{
+					time.Sleep(1 * time.Second)
+					fmt.Println("You're not low enough to heal")
+					time.Sleep(1 * time.Second)
+				} else {
+					time.Sleep(1 * time.Second)
+					hp1 = hp1 + attack3
+					fmt.Println("You have been healed",attack3,"health")
+					time.Sleep(1 * time.Second)
+				}
+			} else {
+				fmt.Println("Sorry that is an invalid command")
+			}
+			var a = time.Now().UnixNano()
+			rand.Seed(a)
+			var random2 = rand.Intn(2)
+			time.Sleep(1 * time.Second)
+			fmt.Println("enemy is attacking")
+			time.Sleep(1 * time.Second)
+			if random2 == 0 {
+				fmt.Println("you took",attacken1,"damage")
+				hp1 = hp1-attacken1
+				time.Sleep(1 * time.Second)
+				if hp1 <= 0 {
+					fmt.Println("You Died")
+					return
+				}
+			}else if random2 == 1 {
+				var b = time.Now().UnixNano()
+				rand.Seed(b)
+				var random3 = rand.Intn(5)
+					if random3 == 1 || random3 == 2 || random3 == 3 {
+						fmt.Println("you took",attacken2,"damage")
+						hp1 = hp1-attacken2
+						time.Sleep(1 * time.Second)	
+						if hp1 <= 0 {
+							fmt.Println("You Died")
+							return
+						}
+					} else {
+						fmt.Println("attack missed")
+							time.Sleep(1 * time.Second)	
+							continue
+					}
+				} else {
+					if hp2 > hp2or - attacken3 {
+						time.Sleep(1 * time.Second)
+						fmt.Println("attack missed")
+						time.Sleep(1 * time.Second)	
+					} else {
+						time.Sleep(1 * time.Second)
+						hp2 = hp2 + attacken3
+						fmt.Println("enemy has been healed",attacken3,"health")
+						time.Sleep(1 * time.Second)
+					}
+				}
+			}
+			time.Sleep(4 * time.Second)
+			fmt.Println("The Brood Mother flees, and you continue up the hill. You hear a creak in the distance, Do you go there:")
+			time.Sleep(4 * time.Second)
+			fmt.Println("1.Yes")
+			fmt.Println("2.No")
+			fmt.Scanln(&b)
+			if b == 1 {
+				time.Sleep(4 * time.Second)
+				fmt.Println("You descend the hill, but you trip, fall and die.")
+				return
+			}
+			fmt.Println("You have just avoided a very disappointing death. You nervously advance forward.")
+			time.Sleep(4 * time.Second)
+			fmt.Println("you have reached the top of the hill. but you don't see the spider. What do you do? Ring the bell, or run back")
+			time.Sleep(4 * time.Second)
+			fmt.Println("1.Ring bell")
+			fmt.Println("2.Run back")
+			fmt.Scanln(&b)
+			if b == 2 {
+				fmt.Println(" You run down the hill, scared. you feel a sharp pain in the back.")
+				time.Sleep(4 * time.Second)
+				fmt.Println("Just like the possessed Spartan, you have been impaled. Dead.")
+				return
+			}
+			time.Sleep(4 * time.Second)
+			fmt.Println("You ring the bell, you have effortlessly conquered the first Mountain.")
+			time.Sleep(4 * time.Second)
+			fmt.Println("You advance towards the second Mountain, which is way larger than the first, but way smaller than Mt. Olympus.")
+			time.Sleep(4 * time.Second)
+			fmt.Println("You are stopped in your path. It is the Brood Mother.")
 	}
