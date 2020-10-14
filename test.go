@@ -1670,5 +1670,5 @@ func main() {
 		time.Sleep(4 * time.Second)
 		fmt.Println("When you hike up the hill, you notice some movement. It is a possessed spartan.  As soon as you notice it, the spartan gets impaled by a ten-foot spider.")
 		time.Sleep(4 * time.Second)
-		fmt.Println("You run away into a bush, hiding.")
+		fmt.Println("You run away into a bush, hiding. The spider notices you.")
 	}
