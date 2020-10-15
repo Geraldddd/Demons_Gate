@@ -39,7 +39,11 @@ func main() {
 		attack3 = attack3 - attack3tr
 		attack4 = attack4 - attack4tr
 		hp1 = hp1or
-		hp2 = hp2or
+		hp2 = 75
+		attacken1 = 10
+		attacken2 = 20
+		attacken3 = 10
+		hp2or = hp2
 		attack1tr = 0
 		hp1tr = 0
 		attack2tr = 0
@@ -1655,7 +1659,7 @@ func main() {
 		fmt.Println("When you hike up the hill, you notice some movement. It is a possessed spartan.  As soon as you notice it, the spartan gets impaled by a ten-foot spider.")
 		time.Sleep(4 * time.Second)
 		fmt.Println("You run away into a bush, hiding. The spider notices you.")
-		hp2 = 250
+		hp2 = 230
 		hp2or = hp2
 		attacken1 = 40
 		attacken2 = 65
@@ -2220,10 +2224,10 @@ func main() {
 			fmt.Println("After beating the minion, your head feels a little relieved.")
 			fmt.Println("This means that if you get rid of their master, it undo's the curse. You continue up the hill, and reach the top.")
 			fmt.Println("You see a Skeletal Giant. You must beat him to ring the second bell. You confidently enter the battle.")
-			hp2 = 140
+			hp2 = 280
 			hp2or = hp2
-			attacken1 = 30
-			attacken2 = 50
+			attacken1 = 40
+			attacken2 = 80
 			attacken3 = 30
 			for battle1 := 1 ;; battle1++ {
 				if battle1 % 10 == 0 {
@@ -2353,10 +2357,10 @@ func main() {
 			time.Sleep(4 * time.Second)
 			fmt.Println("You begin an almost endless trek, and when you are about halfway there, you encounter a possessed spartan. ")
 			time.Sleep(4 * time.Second)
-			hp2 = 100
+			hp2 = 140
 			hp2or = hp2
-			attacken1 = 20
-			attacken2 = 40
+			attacken1 = 30
+			attacken2 = 50
 			attacken3 = 30
 			for battle1 := 1 ;; battle1++ {
 				if battle1 % 10 == 0 {
