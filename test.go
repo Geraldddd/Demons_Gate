@@ -75,7 +75,7 @@ func main() {
 					fmt.Println("using ultimate attack")
 					time.Sleep(5 * time.Second)
 					hp2 = hp2 - attack4
-					fmt.Println("enemy took",attack4,"damage")
+					fmt.Println("Enemy took",attack4,"damage")
 					if hp2 <= 0 {
 						fmt.Println("You Win")
 						break
@@ -99,7 +99,7 @@ func main() {
 			fmt.Scanln(&a)
 			if a == 1 {
 				time.Sleep(1 * time.Second)
-				fmt.Println("Wood Dweller took",attack1,"damage")
+				fmt.Println("Enemy took",attack1,"damage")
 				hp2 = hp2-attack1
 				time.Sleep(1 * time.Second)
 				if hp2 <= 0 {
@@ -113,7 +113,7 @@ func main() {
 				if random == 1 || random == 2 || random == 3 {
 					time.Sleep(1 * time.Second)
 					hp2 = hp2 - attack2
-				fmt.Println("Wood Dweller took",attack2,"damage")
+				fmt.Println("Enemy took",attack2,"damage")
 				time.Sleep(1 * time.Second)
 				if hp2 <= 0 {
 					fmt.Println("You Win")
@@ -239,7 +239,7 @@ func main() {
 							fmt.Println("using ultimate attack")
 							time.Sleep(5 * time.Second)
 							hp2 = hp2 - attack4
-							fmt.Println("enemy took",attack4,"damage")
+							fmt.Println("Enemy took",attack4,"damage")
 							if hp2 <= 0 {
 								fmt.Println("You Win")
 								break
@@ -263,7 +263,7 @@ func main() {
 					fmt.Scanln(&a)
 					if a == 1 {
 						time.Sleep(1 * time.Second)
-						fmt.Println("enemy took",attack1,"damage")
+						fmt.Println("Enemy took",attack1,"damage")
 						hp2 = hp2-attack1
 						time.Sleep(1 * time.Second)
 						if hp2 <= 0 {
@@ -277,7 +277,7 @@ func main() {
 						if random == 1 || random == 2 || random == 3 {
 							time.Sleep(1 * time.Second)
 							hp2 = hp2 - attack2
-						fmt.Println("enemy took",attack2,"damage")
+						fmt.Println("Enemy took",attack2,"damage")
 						time.Sleep(1 * time.Second)
 						if hp2 <= 0 {
 							fmt.Println("You Win")
@@ -439,7 +439,7 @@ func main() {
 				fmt.Scanln(&a)
 				if a == 1 {
 					time.Sleep(1 * time.Second)
-					fmt.Println("enemy took",attack1,"damage")
+					fmt.Println("Enemy took",attack1,"damage")
 					hp2 = hp2-attack1
 					time.Sleep(1 * time.Second)
 					if hp2 <= 0 {
@@ -453,7 +453,7 @@ func main() {
 					if random == 1 || random == 2 || random == 3 {
 						time.Sleep(1 * time.Second)
 						hp2 = hp2 - attack2
-					fmt.Println("enemy took",attack2,"damage")
+					fmt.Println("Enemy took",attack2,"damage")
 					time.Sleep(1 * time.Second)
 					if hp2 <= 0 {
 						fmt.Println("You Win")
@@ -482,7 +482,7 @@ func main() {
 				rand.Seed(a)
 				var random2 = rand.Intn(2)
 				time.Sleep(1 * time.Second)
-				fmt.Println("enemy is attacking")
+				fmt.Println("Enemy is attacking")
 				time.Sleep(1 * time.Second)
 				if random2 == 0 {
 					fmt.Println("you took",attacken1,"damage")
@@ -588,7 +588,7 @@ func main() {
 					fmt.Println("using ultimate attack")
 					time.Sleep(5 * time.Second)
 					hp2 = hp2 - attack4
-					fmt.Println("enemy took",attack4,"damage")
+					fmt.Println("Enemy took",attack4,"damage")
 					if hp2 <= 0 {
 						fmt.Println("You Win")
 						break
@@ -612,7 +612,7 @@ func main() {
 			fmt.Scanln(&a)
 			if a == 1 {
 				time.Sleep(1 * time.Second)
-				fmt.Println("enemy took",attack1,"damage")
+				fmt.Println("Enemy took",attack1,"damage")
 				hp2 = hp2-attack1
 				time.Sleep(1 * time.Second)
 				if hp2 <= 0 {
@@ -626,7 +626,7 @@ func main() {
 				if random == 1 || random == 2 || random == 3 {
 					time.Sleep(1 * time.Second)
 					hp2 = hp2 - attack2
-				fmt.Println("enemy took",attack2,"damage")
+				fmt.Println("Enemy took",attack2,"damage")
 				time.Sleep(1 * time.Second)
 				if hp2 <= 0 {
 					fmt.Println("You Win")
@@ -655,7 +655,7 @@ func main() {
 			rand.Seed(a)
 			var random2 = rand.Intn(2)
 			time.Sleep(1 * time.Second)
-			fmt.Println("enemy is attacking")
+			fmt.Println("Enemy is attacking")
 			time.Sleep(1 * time.Second)
 			if random2 == 0 {
 				fmt.Println("you took",attacken1,"damage")
@@ -692,7 +692,7 @@ func main() {
 					} else {
 						time.Sleep(1 * time.Second)
 						hp2 = hp2 + attacken3
-						fmt.Println("enemy has been healed",attacken3,"health")
+						fmt.Println("Enemy has been healed",attacken3,"health")
 						time.Sleep(1 * time.Second)
 				}
 			}
@@ -856,7 +856,7 @@ func main() {
 							fmt.Scanln(&a)
 							if a == 1 {
 								time.Sleep(1 * time.Second)
-								fmt.Println("Wood Dweller took",attack1,"damage")
+								fmt.Println("Enemy took",attack1,"damage")
 								hp2 = hp2-attack1
 								time.Sleep(1 * time.Second)
 								if hp2 <= 0 {
@@ -870,7 +870,7 @@ func main() {
 								if random == 1 || random == 2 || random == 3 {
 									time.Sleep(1 * time.Second)
 									hp2 = hp2 - attack2
-								fmt.Println("Wood Dweller took",attack2,"damage")
+								fmt.Println("Enemy took",attack2,"damage")
 								time.Sleep(1 * time.Second)
 								if hp2 <= 0 {
 									fmt.Println("You Win")
@@ -899,7 +899,7 @@ func main() {
 							rand.Seed(a)
 							var random2 = rand.Intn(2)
 							time.Sleep(1 * time.Second)
-							fmt.Println("enemy is attacking")
+							fmt.Println("Enemy is attacking")
 							time.Sleep(1 * time.Second)
 							if random2 == 0 {
 								fmt.Println("you took",attacken1,"damage")
@@ -936,7 +936,7 @@ func main() {
 									} else {
 										time.Sleep(1 * time.Second)
 										hp2 = hp2 + attacken3
-										fmt.Println("enemy has been healed",attacken3,"health")
+										fmt.Println("Enemy has been healed",attacken3,"health")
 										time.Sleep(1 * time.Second)
 									}
 								}
@@ -983,7 +983,7 @@ func main() {
 									fmt.Println("using ultimate attack")
 									time.Sleep(5 * time.Second)
 									hp2 = hp2 - attack4
-									fmt.Println("enemy took",attack4,"damage")
+									fmt.Println("Enemy took",attack4,"damage")
 									if hp2 <= 0 {
 										fmt.Println("You Win")
 										break
@@ -1007,7 +1007,7 @@ func main() {
 							fmt.Scanln(&a)
 							if a == 1 {
 								time.Sleep(1 * time.Second)
-								fmt.Println("enemy took",attack1,"damage")
+								fmt.Println("Enemy took",attack1,"damage")
 								hp2 = hp2-attack1
 								time.Sleep(1 * time.Second)
 								if hp2 <= 0 {
@@ -1021,7 +1021,7 @@ func main() {
 								if random == 1 || random == 2 || random == 3 {
 									time.Sleep(1 * time.Second)
 									hp2 = hp2 - attack2
-								fmt.Println("enemy took",attack2,"damage")
+								fmt.Println("Enemy took",attack2,"damage")
 								time.Sleep(1 * time.Second)
 								if hp2 <= 0 {
 									fmt.Println("You Win")
@@ -1050,7 +1050,7 @@ func main() {
 							rand.Seed(a)
 							var random2 = rand.Intn(2)
 							time.Sleep(1 * time.Second)
-							fmt.Println("enemy is attacking")
+							fmt.Println("Enemy is attacking")
 							time.Sleep(1 * time.Second)
 							if random2 == 0 {
 								fmt.Println("you took",attacken1,"damage")
@@ -1087,7 +1087,7 @@ func main() {
 									} else {
 										time.Sleep(1 * time.Second)
 										hp2 = hp2 + attacken3
-										fmt.Println("enemy has been healed",attacken3,"health")
+										fmt.Println("Enemy has been healed",attacken3,"health")
 										time.Sleep(1 * time.Second)
 								}
 							}
@@ -1135,7 +1135,7 @@ func main() {
 									fmt.Println("using ultimate attack")
 									time.Sleep(5 * time.Second)
 									hp2 = hp2 - attack4
-									fmt.Println("enemy took",attack4,"damage")
+									fmt.Println("Enemy took",attack4,"damage")
 									if hp2 <= 0 {
 										fmt.Println("You Win")
 										break
@@ -1159,7 +1159,7 @@ func main() {
 							fmt.Scanln(&a)
 							if a == 1 {
 								time.Sleep(1 * time.Second)
-								fmt.Println("enemy took",attack1,"damage")
+								fmt.Println("Enemy took",attack1,"damage")
 								hp2 = hp2-attack1
 								time.Sleep(1 * time.Second)
 								if hp2 <= 0 {
@@ -1173,7 +1173,7 @@ func main() {
 								if random == 1 || random == 2 || random == 3 {
 									time.Sleep(1 * time.Second)
 									hp2 = hp2 - attack2
-								fmt.Println("enemy took",attack2,"damage")
+								fmt.Println("Enemy took",attack2,"damage")
 								time.Sleep(1 * time.Second)
 								if hp2 <= 0 {
 									fmt.Println("You Win")
@@ -1202,7 +1202,7 @@ func main() {
 							rand.Seed(a)
 							var random2 = rand.Intn(2)
 							time.Sleep(1 * time.Second)
-							fmt.Println("enemy is attacking")
+							fmt.Println("Enemy is attacking")
 							time.Sleep(1 * time.Second)
 							if random2 == 0 {
 								fmt.Println("you took",attacken1,"damage")
@@ -1239,7 +1239,7 @@ func main() {
 									} else {
 										time.Sleep(1 * time.Second)
 										hp2 = hp2 + attacken3
-										fmt.Println("enemy has been healed",attacken3,"health")
+										fmt.Println("Enemy has been healed",attacken3,"health")
 										time.Sleep(1 * time.Second)
 								}
 							}
@@ -1289,7 +1289,7 @@ func main() {
 									fmt.Println("using ultimate attack")
 									time.Sleep(5 * time.Second)
 									hp2 = hp2 - attack4
-									fmt.Println("enemy took",attack4,"damage")
+									fmt.Println("Enemy took",attack4,"damage")
 									if hp2 <= 0 {
 										fmt.Println("You Win")
 										break
@@ -1313,7 +1313,7 @@ func main() {
 							fmt.Scanln(&a)
 							if a == 1 {
 								time.Sleep(1 * time.Second)
-								fmt.Println("enemy took",attack1,"damage")
+								fmt.Println("Enemy took",attack1,"damage")
 								hp2 = hp2-attack1
 								time.Sleep(1 * time.Second)
 								if hp2 <= 0 {
@@ -1327,7 +1327,7 @@ func main() {
 								if random == 1 || random == 2 || random == 3 {
 									time.Sleep(1 * time.Second)
 									hp2 = hp2 - attack2
-								fmt.Println("enemy took",attack2,"damage")
+								fmt.Println("Enemy took",attack2,"damage")
 								time.Sleep(1 * time.Second)
 								if hp2 <= 0 {
 									fmt.Println("You Win")
@@ -1356,7 +1356,7 @@ func main() {
 							rand.Seed(a)
 							var random2 = rand.Intn(2)
 							time.Sleep(1 * time.Second)
-							fmt.Println("enemy is attacking")
+							fmt.Println("Enemy is attacking")
 							time.Sleep(1 * time.Second)
 							if random2 == 0 {
 								fmt.Println("you took",attacken1,"damage")
@@ -1393,7 +1393,7 @@ func main() {
 									} else {
 										time.Sleep(1 * time.Second)
 										hp2 = hp2 + attacken3
-										fmt.Println("enemy has been healed",attacken3,"health")
+										fmt.Println("Enemy has been healed",attacken3,"health")
 										time.Sleep(1 * time.Second)
 								}
 							}
@@ -1409,6 +1409,8 @@ func main() {
 						mon = mon + 200
 						time.Sleep(1 * time.Second)
 					fmt.Println("You gained 200 coins")
+					time.Sleep(1 * time.Second)
+					fmt.Println("Total Coins:",mon)
 					time.Sleep(1 * time.Second)
 						fmt.Println("After beating the Taurus, you scavenge its carcass, and find a key, which opens the chest.")
 						time.Sleep(4 * time.Second)
@@ -1561,7 +1563,7 @@ func main() {
 			fmt.Scanln(&a)
 			if a == 1 {
 				time.Sleep(1 * time.Second)
-				fmt.Println("enemy took",attack1,"damage")
+				fmt.Println("Enemy took",attack1,"damage")
 				hp2 = hp2-attack1
 				time.Sleep(1 * time.Second)
 				if hp2 <= 0 {
@@ -1575,7 +1577,7 @@ func main() {
 				if random == 1 || random == 2 || random == 3 {
 					time.Sleep(1 * time.Second)
 					hp2 = hp2 - attack2
-				fmt.Println("enemy took",attack2,"damage")
+				fmt.Println("Enemy took",attack2,"damage")
 				time.Sleep(1 * time.Second)
 				if hp2 <= 0 {
 					fmt.Println("You Win")
@@ -1604,7 +1606,7 @@ func main() {
 			rand.Seed(a)
 			var random2 = rand.Intn(2)
 			time.Sleep(1 * time.Second)
-			fmt.Println("enemy is attacking")
+			fmt.Println("Enemy is attacking")
 			time.Sleep(1 * time.Second)
 			if random2 == 0 {
 				fmt.Println("you took",attacken1,"damage")
@@ -1639,7 +1641,7 @@ func main() {
 					} else {
 						time.Sleep(1 * time.Second)
 						hp2 = hp2 + attacken3
-						fmt.Println("enemy has been healed",attacken3,"health")
+						fmt.Println("Enemy has been healed",attacken3,"health")
 						time.Sleep(1 * time.Second)
 				}
 			}
@@ -1659,7 +1661,7 @@ func main() {
 		fmt.Println("When you hike up the hill, you notice some movement. It is a possessed spartan.  As soon as you notice it, the spartan gets impaled by a ten-foot spider.")
 		time.Sleep(4 * time.Second)
 		fmt.Println("You run away into a bush, hiding. The spider notices you.")
-		hp2 = 230
+		hp2 = 190
 		hp2or = hp2
 		attacken1 = 40
 		attacken2 = 65
@@ -1677,7 +1679,7 @@ func main() {
 					fmt.Println("using ultimate attack")
 					time.Sleep(5 * time.Second)
 					hp2 = hp2 - attack4
-					fmt.Println("enemy took",attack4,"damage")
+					fmt.Println("Enemy took",attack4,"damage")
 					if hp2 <= 0 {
 						fmt.Println("You Win")
 						break
@@ -1701,7 +1703,7 @@ func main() {
 			fmt.Scanln(&a)
 			if a == 1 {
 				time.Sleep(1 * time.Second)
-				fmt.Println("Wood Dweller took",attack1,"damage")
+				fmt.Println("Enemy took",attack1,"damage")
 				hp2 = hp2-attack1
 				time.Sleep(1 * time.Second)
 				if hp2 <= 0 {
@@ -1715,7 +1717,7 @@ func main() {
 				if random == 1 || random == 2 || random == 3 {
 					time.Sleep(1 * time.Second)
 					hp2 = hp2 - attack2
-				fmt.Println("Wood Dweller took",attack2,"damage")
+				fmt.Println("Enemy took",attack2,"damage")
 				time.Sleep(1 * time.Second)
 				if hp2 <= 0 {
 					fmt.Println("You Win")
@@ -1744,7 +1746,7 @@ func main() {
 			rand.Seed(a)
 			var random2 = rand.Intn(2)
 			time.Sleep(1 * time.Second)
-			fmt.Println("enemy is attacking")
+			fmt.Println("Enemy is attacking")
 			time.Sleep(1 * time.Second)
 			if random2 == 0 {
 				fmt.Println("you took",attacken1,"damage")
@@ -1779,7 +1781,7 @@ func main() {
 					} else {
 						time.Sleep(1 * time.Second)
 						hp2 = hp2 + attacken3
-						fmt.Println("enemy has been healed",attacken3,"health")
+						fmt.Println("Enemy has been healed",attacken3,"health")
 						time.Sleep(1 * time.Second)
 					}
 				}
@@ -1856,7 +1858,7 @@ func main() {
 				fmt.Scanln(&a)
 				if a == 1 {
 					time.Sleep(1 * time.Second)
-					fmt.Println("Wood Dweller took",attack1,"damage")
+					fmt.Println("Enemy took",attack1,"damage")
 					hp2 = hp2-attack1
 					time.Sleep(1 * time.Second)
 					if hp2 <= 0 {
@@ -1870,7 +1872,7 @@ func main() {
 					if random == 1 || random == 2 || random == 3 {
 						time.Sleep(1 * time.Second)
 						hp2 = hp2 - attack2
-					fmt.Println("Wood Dweller took",attack2,"damage")
+					fmt.Println("Enemy took",attack2,"damage")
 					time.Sleep(1 * time.Second)
 					if hp2 <= 0 {
 						fmt.Println("You Win")
@@ -1899,7 +1901,7 @@ func main() {
 				rand.Seed(a)
 				var random2 = rand.Intn(2)
 				time.Sleep(1 * time.Second)
-				fmt.Println("enemy is attacking")
+				fmt.Println("Enemy is attacking")
 				time.Sleep(1 * time.Second)
 				if random2 == 0 {
 					fmt.Println("you took",attacken1,"damage")
@@ -1934,7 +1936,7 @@ func main() {
 						} else {
 							time.Sleep(1 * time.Second)
 							hp2 = hp2 + attacken3
-							fmt.Println("enemy has been healed",attacken3,"health")
+							fmt.Println("Enemy has been healed",attacken3,"health")
 							time.Sleep(1 * time.Second)
 						}
 					}
@@ -1970,7 +1972,7 @@ func main() {
 						fmt.Println("using ultimate attack")
 						time.Sleep(5 * time.Second)
 						hp2 = hp2 - attack4
-						fmt.Println("enemy took",attack4,"damage")
+						fmt.Println("Enemy took",attack4,"damage")
 						if hp2 <= 0 {
 							fmt.Println("You Win")
 							break
@@ -1994,7 +1996,7 @@ func main() {
 				fmt.Scanln(&a)
 				if a == 1 {
 					time.Sleep(1 * time.Second)
-					fmt.Println("Wood Dweller took",attack1,"damage")
+					fmt.Println("Enemy took",attack1,"damage")
 					hp2 = hp2-attack1
 					time.Sleep(1 * time.Second)
 					if hp2 <= 0 {
@@ -2008,7 +2010,7 @@ func main() {
 					if random == 1 || random == 2 || random == 3 {
 						time.Sleep(1 * time.Second)
 						hp2 = hp2 - attack2
-					fmt.Println("Wood Dweller took",attack2,"damage")
+					fmt.Println("Enemy took",attack2,"damage")
 					time.Sleep(1 * time.Second)
 					if hp2 <= 0 {
 						fmt.Println("You Win")
@@ -2037,7 +2039,7 @@ func main() {
 				rand.Seed(a)
 				var random2 = rand.Intn(2)
 				time.Sleep(1 * time.Second)
-				fmt.Println("enemy is attacking")
+				fmt.Println("Enemy is attacking")
 				time.Sleep(1 * time.Second)
 				if random2 == 0 {
 					fmt.Println("you took",attacken1,"damage")
@@ -2072,7 +2074,7 @@ func main() {
 						} else {
 							time.Sleep(1 * time.Second)
 							hp2 = hp2 + attacken3
-							fmt.Println("enemy has been healed",attacken3,"health")
+							fmt.Println("Enemy has been healed",attacken3,"health")
 							time.Sleep(1 * time.Second)
 						}
 					}
@@ -2113,7 +2115,7 @@ func main() {
 						fmt.Println("using ultimate attack")
 						time.Sleep(5 * time.Second)
 						hp2 = hp2 - attack4
-						fmt.Println("enemy took",attack4,"damage")
+						fmt.Println("Enemy took",attack4,"damage")
 						if hp2 <= 0 {
 							fmt.Println("You Win")
 							break
@@ -2137,7 +2139,7 @@ func main() {
 				fmt.Scanln(&a)
 				if a == 1 {
 					time.Sleep(1 * time.Second)
-					fmt.Println("Wood Dweller took",attack1,"damage")
+					fmt.Println("Enemy took",attack1,"damage")
 					hp2 = hp2-attack1
 					time.Sleep(1 * time.Second)
 					if hp2 <= 0 {
@@ -2151,7 +2153,7 @@ func main() {
 					if random == 1 || random == 2 || random == 3 {
 						time.Sleep(1 * time.Second)
 						hp2 = hp2 - attack2
-					fmt.Println("Wood Dweller took",attack2,"damage")
+					fmt.Println("Enemy took",attack2,"damage")
 					time.Sleep(1 * time.Second)
 					if hp2 <= 0 {
 						fmt.Println("You Win")
@@ -2180,7 +2182,7 @@ func main() {
 				rand.Seed(a)
 				var random2 = rand.Intn(2)
 				time.Sleep(1 * time.Second)
-				fmt.Println("enemy is attacking")
+				fmt.Println("Enemy is attacking")
 				time.Sleep(1 * time.Second)
 				if random2 == 0 {
 					fmt.Println("you took",attacken1,"damage")
@@ -2215,7 +2217,7 @@ func main() {
 						} else {
 							time.Sleep(1 * time.Second)
 							hp2 = hp2 + attacken3
-							fmt.Println("enemy has been healed",attacken3,"health")
+							fmt.Println("Enemy has been healed",attacken3,"health")
 							time.Sleep(1 * time.Second)
 						}
 					}
@@ -2242,7 +2244,7 @@ func main() {
 						fmt.Println("using ultimate attack")
 						time.Sleep(5 * time.Second)
 						hp2 = hp2 - attack4
-						fmt.Println("enemy took",attack4,"damage")
+						fmt.Println("Enemy took",attack4,"damage")
 						if hp2 <= 0 {
 							fmt.Println("You Win")
 							break
@@ -2266,7 +2268,7 @@ func main() {
 				fmt.Scanln(&a)
 				if a == 1 {
 					time.Sleep(1 * time.Second)
-					fmt.Println("Wood Dweller took",attack1,"damage")
+					fmt.Println("Enemy took",attack1,"damage")
 					hp2 = hp2-attack1
 					time.Sleep(1 * time.Second)
 					if hp2 <= 0 {
@@ -2280,7 +2282,7 @@ func main() {
 					if random == 1 || random == 2 || random == 3 {
 						time.Sleep(1 * time.Second)
 						hp2 = hp2 - attack2
-					fmt.Println("Wood Dweller took",attack2,"damage")
+					fmt.Println("Enemy took",attack2,"damage")
 					time.Sleep(1 * time.Second)
 					if hp2 <= 0 {
 						fmt.Println("You Win")
@@ -2309,7 +2311,7 @@ func main() {
 				rand.Seed(a)
 				var random2 = rand.Intn(2)
 				time.Sleep(1 * time.Second)
-				fmt.Println("enemy is attacking")
+				fmt.Println("Enemy is attacking")
 				time.Sleep(1 * time.Second)
 				if random2 == 0 {
 					fmt.Println("you took",attacken1,"damage")
@@ -2344,7 +2346,7 @@ func main() {
 						} else {
 							time.Sleep(1 * time.Second)
 							hp2 = hp2 + attacken3
-							fmt.Println("enemy has been healed",attacken3,"health")
+							fmt.Println("Enemy has been healed",attacken3,"health")
 							time.Sleep(1 * time.Second)
 						}
 					}
@@ -2375,7 +2377,7 @@ func main() {
 						fmt.Println("using ultimate attack")
 						time.Sleep(5 * time.Second)
 						hp2 = hp2 - attack4
-						fmt.Println("enemy took",attack4,"damage")
+						fmt.Println("Enemy took",attack4,"damage")
 						if hp2 <= 0 {
 							fmt.Println("You Win")
 							break
@@ -2399,7 +2401,7 @@ func main() {
 				fmt.Scanln(&a)
 				if a == 1 {
 					time.Sleep(1 * time.Second)
-					fmt.Println("Wood Dweller took",attack1,"damage")
+					fmt.Println("Enemy took",attack1,"damage")
 					hp2 = hp2-attack1
 					time.Sleep(1 * time.Second)
 					if hp2 <= 0 {
@@ -2413,7 +2415,7 @@ func main() {
 					if random == 1 || random == 2 || random == 3 {
 						time.Sleep(1 * time.Second)
 						hp2 = hp2 - attack2
-					fmt.Println("Wood Dweller took",attack2,"damage")
+					fmt.Println("Enemy took",attack2,"damage")
 					time.Sleep(1 * time.Second)
 					if hp2 <= 0 {
 						fmt.Println("You Win")
@@ -2442,7 +2444,7 @@ func main() {
 				rand.Seed(a)
 				var random2 = rand.Intn(2)
 				time.Sleep(1 * time.Second)
-				fmt.Println("enemy is attacking")
+				fmt.Println("Enemy is attacking")
 				time.Sleep(1 * time.Second)
 				if random2 == 0 {
 					fmt.Println("you took",attacken1,"damage")
@@ -2477,7 +2479,7 @@ func main() {
 						} else {
 							time.Sleep(1 * time.Second)
 							hp2 = hp2 + attacken3
-							fmt.Println("enemy has been healed",attacken3,"health")
+							fmt.Println("Enemy has been healed",attacken3,"health")
 							time.Sleep(1 * time.Second)
 						}
 					}
@@ -2512,7 +2514,7 @@ func main() {
 							fmt.Println("using ultimate attack")
 							time.Sleep(5 * time.Second)
 							hp2 = hp2 - attack4
-							fmt.Println("enemy took",attack4,"damage")
+							fmt.Println("Enemy took",attack4,"damage")
 							if hp2 <= 0 {
 								fmt.Println("You Win")
 								break
@@ -2536,7 +2538,7 @@ func main() {
 					fmt.Scanln(&a)
 					if a == 1 {
 						time.Sleep(1 * time.Second)
-						fmt.Println("Wood Dweller took",attack1,"damage")
+						fmt.Println("Enemy took",attack1,"damage")
 						hp2 = hp2-attack1
 						time.Sleep(1 * time.Second)
 						if hp2 <= 0 {
@@ -2550,7 +2552,7 @@ func main() {
 						if random == 1 || random == 2 || random == 3 {
 							time.Sleep(1 * time.Second)
 							hp2 = hp2 - attack2
-						fmt.Println("Wood Dweller took",attack2,"damage")
+						fmt.Println("Enemy took",attack2,"damage")
 						time.Sleep(1 * time.Second)
 						if hp2 <= 0 {
 							fmt.Println("You Win")
@@ -2579,7 +2581,7 @@ func main() {
 					rand.Seed(a)
 					var random2 = rand.Intn(2)
 					time.Sleep(1 * time.Second)
-					fmt.Println("enemy is attacking")
+					fmt.Println("Enemy is attacking")
 					time.Sleep(1 * time.Second)
 					if random2 == 0 {
 						fmt.Println("you took",attacken1,"damage")
@@ -2614,7 +2616,7 @@ func main() {
 							} else {
 								time.Sleep(1 * time.Second)
 								hp2 = hp2 + attacken3
-								fmt.Println("enemy has been healed",attacken3,"health")
+								fmt.Println("Enemy has been healed",attacken3,"health")
 								time.Sleep(1 * time.Second)
 							}
 						}
