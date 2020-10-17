@@ -199,7 +199,7 @@ func main() {
 			attack1tr = attack1tr + 10
 			attack2tr = attack2tr + 10
 			attack4tr = attack4tr + 10
-			fmt.Println("Weapon Upgrade: Battle Axe")
+			fmt.Println("Weapon upgraded")
 			time.Sleep(4 * time.Second)
 			fmt.Println("You venture deeper into the woods, in hope of finding something that may bring back your memory, but you feel a severe headache.")
 			time.Sleep(7 * time.Second)
@@ -1647,7 +1647,7 @@ func main() {
 			}
 		}
 		hp1 = hp1or
-		hp1 = hp1 + 10
+		hp1 = hp1 + 30
 		hp1or = hp1
 		time.Sleep(1 * time.Second)
 		fmt.Println("After the battle, you claim its helmet.")
@@ -1663,8 +1663,8 @@ func main() {
 		fmt.Println("You run away into a bush, hiding. The spider notices you.")
 		hp2 = 190
 		hp2or = hp2
-		attacken1 = 40
-		attacken2 = 65
+		attacken1 = 30
+		attacken2 = 50
 		attacken3 = 30
 		for battle1 := 1 ;; battle1++ {
 			if battle1 % 10 == 0 {
@@ -1816,6 +1816,7 @@ func main() {
 			fmt.Println("You advance towards the second Mountain, which is way larger than the first, but way smaller than Mt. Olympus.")
 			time.Sleep(4 * time.Second)
 			fmt.Println("You are stopped in your path. It is the Brood Mother.")
+			hp1 = hp1or
 			hp2 = 100
 			hp2or = hp2
 			attacken1 = 20
@@ -1942,7 +1943,7 @@ func main() {
 					}
 				}
 				hp1 = hp1or
-				attack3 = attack3 + 10
+				attack3 = attack3 + 20
 				fmt.Println("The Brood Mother was powerless. You had reduced her to cripples in the first battle.")
 				time.Sleep(4 * time.Second)
 				fmt.Println("You scavenge her body, and find an advanced heal potion.")
@@ -2086,11 +2087,13 @@ func main() {
 			fmt.Println("1.Pick it up.")
 			fmt.Println("2.Ignore it.")
 			fmt.Scanln(&b)
+			time.Sleep(4 * time.Second)
 			if b == 1 {
 				fmt.Println("New Weapon: Trident")
-				attacken2 = 70
-				attacken1 = 45
+				attack2 = 75
+				attack1 = 50
 			}
+			time.Sleep(4 * time.Second)
 			fmt.Println("you proceed further up, until you see a wall, too hard to climb.")
 			time.Sleep(4 * time.Second)
 			fmt.Println("You attempt to climb the wall, and notice that you are at a plateau, almost up the mountain. You encounter a demon.")
@@ -2223,13 +2226,22 @@ func main() {
 					}
 				}
 			hp1 = hp1or
+			hp1 = hp1 + 20
+			hp1or = hp1
 			fmt.Println("After beating the minion, your head feels a little relieved.")
+			time.Sleep(4 * time.Second)
+			fmt.Println("You pick up his helmet")
+			time.Sleep(4 * time.Second)
+			fmt.Println("Armour upgraded")
+			time.Sleep(4 * time.Second)
 			fmt.Println("This means that if you get rid of their master, it undo's the curse. You continue up the hill, and reach the top.")
+			time.Sleep(4 * time.Second)
 			fmt.Println("You see a Skeletal Giant. You must beat him to ring the second bell. You confidently enter the battle.")
-			hp2 = 280
+			time.Sleep(4 * time.Second)
+			hp2 = 230
 			hp2or = hp2
-			attacken1 = 40
-			attacken2 = 80
+			attacken1 = 35
+			attacken2 = 70
 			attacken3 = 30
 			for battle1 := 1 ;; battle1++ {
 				if battle1 % 10 == 0 {
@@ -2352,8 +2364,14 @@ func main() {
 					}
 				}
 			hp1 = hp1or
+			attack1 = 80
+			attack2 = 60
 			time.Sleep(4 * time.Second)
 			fmt.Println("You have defeated the Skeletal Giant. you head over to the second bell, and ring it.")
+			time.Sleep(4 * time.Second)
+			fmt.Println("You see his hammer on the ground and pick it up.")
+			time.Sleep(4 * time.Second)
+			fmt.Println("Weapons upgraded")
 			time.Sleep(4 * time.Second)
 			fmt.Println("You can now advance to Mount Olympus. The largest mountain, overlooking Mystic Woods.")
 			time.Sleep(4 * time.Second)
@@ -2623,6 +2641,10 @@ func main() {
 					}
 					hp1 = hp1or
 					fmt.Println("You Don't kill Zeus, you have knocked the curse out of him. He recovers and thanks you.")
+					time.Sleep(4 * time.Second)
+					fmt.Println("He gives you some of his magic")
+					time.Sleep(4 * time.Second)
+					fmt.Println("Magic Upgraded")
 					time.Sleep(4 * time.Second)
 					fmt.Println("You take the gem, and proceed to the Cursed Castle.")
 					time.Sleep(7 * time.Second)
