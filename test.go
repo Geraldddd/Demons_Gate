@@ -796,7 +796,6 @@ func main() {
 			fmt.Println("You then see a keep in the distance gaurded by several creatures.")
 			time.Sleep(3 * time.Second)
 			for taurus := 1 ;; taurus++{
-			mon = mon - montr
 			hp1 = hp1or
 			hp2 = hp2or
 			check = 1
@@ -1528,7 +1527,6 @@ func main() {
 		attack3 = attack3 - attack3tr
 		attack4 = attack4 - attack4tr
 		hp1 = hp1or
-		hp2 = 75
 		attacken1 = 10
 		attacken2 = 20
 		attacken3 = 10
