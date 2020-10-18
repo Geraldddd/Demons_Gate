@@ -1541,7 +1541,7 @@ func main() {
 			attacken1 = 20
 			attacken2 = 40
 			hp2 = 130
-			hp2 = hp2or
+			hp2or = hp2
 			attacken3 = 30
 			hp1 = hp1or
 			for battle1 := 1 ;; battle1++ {
