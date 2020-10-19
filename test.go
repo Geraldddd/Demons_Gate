@@ -1666,6 +1666,12 @@ func main() {
 					}
 				}
 			}
+			if check == 2 {
+				time.Sleep(2 * time.Second)
+				fmt.Println("Respawning")
+				time.Sleep(5 * time.Second)
+				continue
+			}
 			hp1 = hp1or
 			hp1 = hp1 + 30
 			hp1tr = hp1tr + 30
