@@ -1254,17 +1254,12 @@ func main() {
 						mon = mon + 50
 						time.Sleep(1 * time.Second)
 					fmt.Println("You gained 50 coins")
-					time.Sleep(1 * time.Second)
-					fmt.Println("The Beast drops to the ground grasping a note in his hand: 201514")
 					}else{
 						fmt.Println("You already explored here. departing in 3 seconds")
 						time.Sleep(3 * time.Second)
 					}
 				}else if a == 4 {
 					time.Sleep(1 * time.Second)
-					fmt.Println("Please enter the code")
-					fmt.Scanln(&b)
-					if b == 201514 {
 						fmt.Println("You enter a dungeon with a large monster weilding a giant axe")
 						time.Sleep(1 * time.Second)
 						fmt.Println("You enter a battle with Taurus")
@@ -1419,11 +1414,6 @@ func main() {
 					time.Sleep(7 * time.Second)
 					check4 = 1
 					break
-					}else{
-						time.Sleep(1 * time.Second)
-						fmt.Println("That is incorrect")
-						time.Sleep(1 * time.Second)
-					}
 				}else{
 					time.Sleep(1 * time.Second)
 					for {
