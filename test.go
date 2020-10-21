@@ -17,7 +17,7 @@ func main() {
 	var hp2 = 75
 	var hp2or = hp2
 	var hp1or = hp1
-	var attack1 = 69696969696969
+	var attack1 = 10
 	var attack2 = 30
 	var attack3 = 20
 	var attack4 = 50
@@ -2124,6 +2124,7 @@ func main() {
 				fmt.Println("New Weapon: Trident")
 				attack2 = 75
 				attack1 = 50
+				attack4 = 100
 			}
 			time.Sleep(4 * time.Second)
 			fmt.Println("you proceed further up, until you see a wall, too hard to climb.")
@@ -2398,6 +2399,7 @@ func main() {
 			hp1 = hp1or
 			attack1 = 60
 			attack2 = 80
+			attack4 = 120
 			time.Sleep(4 * time.Second)
 			fmt.Println("You have defeated the Skeletal Giant. you head over to the second bell, and ring it.")
 			time.Sleep(4 * time.Second)
