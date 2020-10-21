@@ -17,7 +17,7 @@ func main() {
 	var hp2 = 75
 	var hp2or = hp2
 	var hp1or = hp1
-	var attack1 = 10
+	var attack1 = 69696969696969
 	var attack2 = 30
 	var attack3 = 20
 	var attack4 = 50
@@ -1264,7 +1264,6 @@ func main() {
 						time.Sleep(1 * time.Second)
 						fmt.Println("You enter a battle with Taurus")
 						hp2 = hp2or
-						key3 ++
 						attacken1 = 30
 						attacken2 = 60
 						hp2 = 220
