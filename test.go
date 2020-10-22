@@ -17,7 +17,7 @@ func main() {
 	var hp2 = 75
 	var hp2or = hp2
 	var hp1or = hp1
-	var attack1 = 10
+	var attack1 = 690000
 	var attack2 = 30
 	var attack3 = 20
 	var attack4 = 50
@@ -1509,16 +1509,15 @@ func main() {
 		time.Sleep(4 * time.Second)
 		fmt.Println("You enter a battle with Possessed Spartan")
 		for {
+		hp1 = hp1 - hp1tr 
+		hp1 = hp1or
 		attack1 = attack1 - attack1tr
 		mon = mon - montr
 		hp1 = hp1 - hp1tr
+		hp1or = hp1
 		attack2 = attack2 - attack2tr
 		attack3 = attack3 - attack3tr
 		attack4 = attack4 - attack4tr
-		hp1 = hp1or
-		attacken1 = 10
-		attacken2 = 20
-		attacken3 = 10
 		hp2or = hp2
 		attack1tr = 0
 		hp1tr = 0
@@ -1532,7 +1531,6 @@ func main() {
 			hp2 = 130
 			hp2or = hp2
 			attacken3 = 30
-			hp1 = hp1or
 			for battle1 := 1 ;; battle1++ {
 				if battle1 % 10 == 0 {
 					fmt.Println("ultimate attack is ready")
@@ -1633,7 +1631,7 @@ func main() {
 							hp1 = hp1-attacken2
 							time.Sleep(1 * time.Second)	
 							if hp1 <= 0 {
-								fmt.Println("game over")
+								fmt.Println("You died")
 								check = 2
 								break
 							}
@@ -1837,7 +1835,7 @@ func main() {
 			fmt.Println("2.Run back")
 			fmt.Scanln(&b)
 			if b == 2 {
-				fmt.Println(" You run down the hill, scared. you feel a sharp pain in the back.")
+				fmt.Println("You run down the hill, scared. you feel a sharp pain in the back.")
 				time.Sleep(4 * time.Second)
 				fmt.Println("Just like the possessed Spartan, you have been impaled. Dead.")
 				return
