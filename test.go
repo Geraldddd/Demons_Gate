@@ -17,7 +17,7 @@ func main() {
 	var hp2 = 75
 	var hp2or = hp2
 	var hp1or = hp1
-	var attack1 = 690000
+	var attack1 = 10
 	var attack2 = 30
 	var attack3 = 20
 	var attack4 = 50
