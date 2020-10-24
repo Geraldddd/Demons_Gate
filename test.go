@@ -15,7 +15,7 @@ func main() {
 		fmt.Println("4.Playground")
 		fmt.Println("5.Instructions")
 		fmt.Scanln(&game)
-		fmt.Println("Starting Game")
+		fmt.Println("Starting")
 		time.Sleep(5 * time.Second)
 		if game ==1 {
 			var a int
