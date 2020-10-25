@@ -2517,23 +2517,28 @@ func main() {
 								time.Sleep(5 * time.Second)
 								continue
 							}
-						attack1tr = attack1
-						attack2tr = attack2
-						attack4tr = attack4
-						hp1 = hp1or
-						attack1 = 60
-						attack2 = 80
-						attack4 = 120
-						attack1tr = attack1 - attack1tr
-						attack2tr = attack2 - attack2tr
-						attack4tr = attack4 - attack4tr
 						time.Sleep(4 * time.Second)
 						fmt.Println("You have defeated the Skeletal Giant. you head over to the second bell, and ring it.")
 						time.Sleep(4 * time.Second)
-						fmt.Println("You see his hammer on the ground and pick it up.")
-						time.Sleep(4 * time.Second)
-						fmt.Println("Weapons upgraded")
-						time.Sleep(4 * time.Second)
+						fmt.Println("You see his hammer on the ground do you pick it up.")
+						fmt.Println("1.Pick it up.")
+						fmt.Println("2.Ignore it")
+						fmt.Scanln(&b)
+						if b == 1 {
+							attack1tr = attack1
+							attack2tr = attack2
+							attack4tr = attack4
+							hp1 = hp1or
+							attack1 = 60
+							attack2 = 80
+							attack4 = 120
+							attack1tr = attack1 - attack1tr
+							attack2tr = attack2 - attack2tr
+							attack4tr = attack4 - attack4tr
+							time.Sleep(4 * time.Second)
+							fmt.Println("Weapons upgraded")
+							time.Sleep(4 * time.Second)
+						}
 						fmt.Println("You can now advance to Mount Olympus. The largest mountain, overlooking Mystic Woods.")
 						time.Sleep(4 * time.Second)
 						fmt.Println("You begin an almost endless trek, and when you are about halfway there, you encounter a possessed spartan. ")
@@ -2851,6 +2856,7 @@ func main() {
 							montr = 0
 							break
 						}
+							attack3 = attack3 + 30
 							fmt.Println("You Don't kill Zeus, you have knocked the curse out of him. He recovers and thanks you.")
 							time.Sleep(4 * time.Second)
 							fmt.Println("He gives you some of his magic")
@@ -2873,14 +2879,14 @@ func main() {
 							time.Sleep(5 * time.Second)
 							fmt.Println("The Castle Gate creaks open, as you take confident steps, entering the castle.")
 							time.Sleep(5 * time.Second)
-							fmt.Println("fmt.PThe castle is dark, and cursed. A Royal Servant stops you in your path, in the path leading to the main gates.")
+							fmt.Println("The castle is dark, and cursed. A Royal Servant stops you in your path, in the path leading to the main gates.")
 							time.Sleep(5 * time.Second)
 							fmt.Println("How dare you enter in this blissful castle. Your presence brings shame.")
 							time.Sleep(4 * time.Second)
-							hp2 = 180
+							hp2 = 200
 							hp2or = hp2
-							attacken1 = 30
-							attacken2 = 100
+							attacken1 = 40
+							attacken2 = 70
 							attacken3 = 30
 							for battle1 := 1 ;; battle1++ {
 								if battle1 % 10 == 0 {
