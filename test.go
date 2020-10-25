@@ -137,9 +137,14 @@ func main() {
 							time.Sleep(1 * time.Second)
 						}
 					} else if a == 3 {
-						if hp1 > hp1or - attack3{
+						if hp1 == hp1or {
 							time.Sleep(1 * time.Second)
 							fmt.Println("You're not low enough to heal")
+							time.Sleep(1 * time.Second)
+						} else if hp1 >= (hp1or - attack3){
+							time.Sleep(1 * time.Second)
+							hp1 = hp1or
+							fmt.Println("You have been healed to max")
 							time.Sleep(1 * time.Second)
 						} else {
 							time.Sleep(1 * time.Second)
@@ -301,9 +306,14 @@ func main() {
 									time.Sleep(1 * time.Second)
 								}
 							} else if a == 3 {
-								if hp1 > hp1or - attack3 {
+								if hp1 == hp1or {
 									time.Sleep(1 * time.Second)
 									fmt.Println("You're not low enough to heal")
+									time.Sleep(1 * time.Second)
+								} else if hp1 >= (hp1or - attack3){
+									time.Sleep(1 * time.Second)
+									hp1 = hp1or
+									fmt.Println("You have been healed to max")
 									time.Sleep(1 * time.Second)
 								} else {
 									time.Sleep(1 * time.Second)
@@ -477,9 +487,14 @@ func main() {
 								time.Sleep(1 * time.Second)
 							}
 						} else if a == 3 {
-							if hp1 > hp1or - attack3 {
+							if hp1 == hp1or {
 								time.Sleep(1 * time.Second)
 								fmt.Println("You're not low enough to heal")
+								time.Sleep(1 * time.Second)
+							} else if hp1 >= (hp1or - attack3){
+								time.Sleep(1 * time.Second)
+								hp1 = hp1or
+								fmt.Println("You have been healed to max")
 								time.Sleep(1 * time.Second)
 							} else {
 								time.Sleep(1 * time.Second)
@@ -650,9 +665,14 @@ func main() {
 							time.Sleep(1 * time.Second)
 						}
 					} else if a == 3 {
-						if hp1 > hp1or - attack3 {
+						if hp1 == hp1or {
 							time.Sleep(1 * time.Second)
 							fmt.Println("You're not low enough to heal")
+							time.Sleep(1 * time.Second)
+						} else if hp1 >= (hp1or - attack3){
+							time.Sleep(1 * time.Second)
+							hp1 = hp1or
+							fmt.Println("You have been healed to max")
 							time.Sleep(1 * time.Second)
 						} else {
 							time.Sleep(1 * time.Second)
@@ -893,9 +913,14 @@ func main() {
 											time.Sleep(1 * time.Second)
 										}
 									} else if a == 3 {
-										if hp1 > hp1or - attack3{
+										if hp1 == hp1or {
 											time.Sleep(1 * time.Second)
 											fmt.Println("You're not low enough to heal")
+											time.Sleep(1 * time.Second)
+										} else if hp1 >= (hp1or - attack3){
+											time.Sleep(1 * time.Second)
+											hp1 = hp1or
+											fmt.Println("You have been healed to max")
 											time.Sleep(1 * time.Second)
 										} else {
 											time.Sleep(1 * time.Second)
@@ -1044,9 +1069,14 @@ func main() {
 											time.Sleep(1 * time.Second)
 										}
 									} else if a == 3 {
-										if hp1 > hp1or - attack3 {
+										if hp1 == hp1or {
 											time.Sleep(1 * time.Second)
 											fmt.Println("You're not low enough to heal")
+											time.Sleep(1 * time.Second)
+										} else if hp1 >= (hp1or - attack3){
+											time.Sleep(1 * time.Second)
+											hp1 = hp1or
+											fmt.Println("You have been healed to max")
 											time.Sleep(1 * time.Second)
 										} else {
 											time.Sleep(1 * time.Second)
@@ -1195,9 +1225,14 @@ func main() {
 											time.Sleep(1 * time.Second)
 										}
 									} else if a == 3 {
-										if hp1 > hp1or - attack3 {
+										if hp1 == hp1or {
 											time.Sleep(1 * time.Second)
 											fmt.Println("You're not low enough to heal")
+											time.Sleep(1 * time.Second)
+										} else if hp1 >= (hp1or - attack3){
+											time.Sleep(1 * time.Second)
+											hp1 = hp1or
+											fmt.Println("You have been healed to max")
 											time.Sleep(1 * time.Second)
 										} else {
 											time.Sleep(1 * time.Second)
@@ -1343,9 +1378,14 @@ func main() {
 											time.Sleep(1 * time.Second)
 										}
 									} else if a == 3 {
-										if hp1 > hp1or - attack3 {
+										if hp1 == hp1or {
 											time.Sleep(1 * time.Second)
 											fmt.Println("You're not low enough to heal")
+											time.Sleep(1 * time.Second)
+										} else if hp1 >= (hp1or - attack3){
+											time.Sleep(1 * time.Second)
+											hp1 = hp1or
+											fmt.Println("You have been healed to max")
 											time.Sleep(1 * time.Second)
 										} else {
 											time.Sleep(1 * time.Second)
@@ -1605,9 +1645,14 @@ func main() {
 								time.Sleep(1 * time.Second)
 							}
 						} else if a == 3 {
-							if hp1 > hp1or - attack3 {
+							if hp1 == hp1or {
 								time.Sleep(1 * time.Second)
 								fmt.Println("You're not low enough to heal")
+								time.Sleep(1 * time.Second)
+							} else if hp1 >= (hp1or - attack3){
+								time.Sleep(1 * time.Second)
+								hp1 = hp1or
+								fmt.Println("You have been healed to max")
 								time.Sleep(1 * time.Second)
 							} else {
 								time.Sleep(1 * time.Second)
@@ -1754,9 +1799,14 @@ func main() {
 								time.Sleep(1 * time.Second)
 							}
 						} else if a == 3 {
-							if hp1 > hp1or - attack3{
+							if hp1 == hp1or {
 								time.Sleep(1 * time.Second)
 								fmt.Println("You're not low enough to heal")
+								time.Sleep(1 * time.Second)
+							} else if hp1 >= (hp1or - attack3){
+								time.Sleep(1 * time.Second)
+								hp1 = hp1or
+								fmt.Println("You have been healed to max")
 								time.Sleep(1 * time.Second)
 							} else {
 								time.Sleep(1 * time.Second)
@@ -1949,9 +1999,14 @@ func main() {
 							time.Sleep(1 * time.Second)
 						}
 					} else if a == 3 {
-						if hp1 > hp1or - attack3{
+						if hp1 == hp1or {
 							time.Sleep(1 * time.Second)
 							fmt.Println("You're not low enough to heal")
+							time.Sleep(1 * time.Second)
+						} else if hp1 >= (hp1or - attack3){
+							time.Sleep(1 * time.Second)
+							hp1 = hp1or
+							fmt.Println("You have been healed to max")
 							time.Sleep(1 * time.Second)
 						} else {
 							time.Sleep(1 * time.Second)
@@ -2121,9 +2176,14 @@ func main() {
 										time.Sleep(1 * time.Second)
 									}
 								} else if a == 3 {
-									if hp1 > hp1or - attack3{
+									if hp1 == hp1or {
 										time.Sleep(1 * time.Second)
 										fmt.Println("You're not low enough to heal")
+										time.Sleep(1 * time.Second)
+									} else if hp1 >= (hp1or - attack3){
+										time.Sleep(1 * time.Second)
+										hp1 = hp1or
+										fmt.Println("You have been healed to max")
 										time.Sleep(1 * time.Second)
 									} else {
 										time.Sleep(1 * time.Second)
@@ -2280,9 +2340,14 @@ func main() {
 										time.Sleep(1 * time.Second)
 									}
 								} else if a == 3 {
-									if hp1 > hp1or - attack3{
+									if hp1 == hp1or {
 										time.Sleep(1 * time.Second)
 										fmt.Println("You're not low enough to heal")
+										time.Sleep(1 * time.Second)
+									} else if hp1 >= (hp1or - attack3){
+										time.Sleep(1 * time.Second)
+										hp1 = hp1or
+										fmt.Println("You have been healed to max")
 										time.Sleep(1 * time.Second)
 									} else {
 										time.Sleep(1 * time.Second)
@@ -2452,9 +2517,14 @@ func main() {
 									time.Sleep(1 * time.Second)
 								}
 							} else if a == 3 {
-								if hp1 > hp1or - attack3{
+								if hp1 == hp1or {
 									time.Sleep(1 * time.Second)
 									fmt.Println("You're not low enough to heal")
+									time.Sleep(1 * time.Second)
+								} else if hp1 >= (hp1or - attack3){
+									time.Sleep(1 * time.Second)
+									hp1 = hp1or
+									fmt.Println("You have been healed to max")
 									time.Sleep(1 * time.Second)
 								} else {
 									time.Sleep(1 * time.Second)
@@ -2611,9 +2681,14 @@ func main() {
 									time.Sleep(1 * time.Second)
 								}
 							} else if a == 3 {
-								if hp1 > hp1or - attack3{
+								if hp1 == hp1or {
 									time.Sleep(1 * time.Second)
 									fmt.Println("You're not low enough to heal")
+									time.Sleep(1 * time.Second)
+								} else if hp1 >= (hp1or - attack3){
+									time.Sleep(1 * time.Second)
+									hp1 = hp1or
+									fmt.Println("You have been healed to max")
 									time.Sleep(1 * time.Second)
 								} else {
 									time.Sleep(1 * time.Second)
@@ -2782,9 +2857,14 @@ func main() {
 										time.Sleep(1 * time.Second)
 									}
 								} else if a == 3 {
-									if hp1 > hp1or - attack3{
+									if hp1 == hp1or {
 										time.Sleep(1 * time.Second)
 										fmt.Println("You're not low enough to heal")
+										time.Sleep(1 * time.Second)
+									} else if hp1 >= (hp1or - attack3){
+										time.Sleep(1 * time.Second)
+										hp1 = hp1or
+										fmt.Println("You have been healed to max")
 										time.Sleep(1 * time.Second)
 									} else {
 										time.Sleep(1 * time.Second)
@@ -2951,9 +3031,14 @@ func main() {
 										time.Sleep(1 * time.Second)
 									}
 								} else if a == 3 {
-									if hp1 > hp1or - attack3{
+									if hp1 == hp1or {
 										time.Sleep(1 * time.Second)
 										fmt.Println("You're not low enough to heal")
+										time.Sleep(1 * time.Second)
+									} else if hp1 >= (hp1or - attack3){
+										time.Sleep(1 * time.Second)
+										hp1 = hp1or
+										fmt.Println("You have been healed to max")
 										time.Sleep(1 * time.Second)
 									} else {
 										time.Sleep(1 * time.Second)
@@ -3009,6 +3094,10 @@ func main() {
 									}
 								}
 							hp1 = hp1or
+							mon = mon + 30
+							fmt.Println("You gained 30 coins")
+							time.Sleep(4 * time.Second)
+							fmt.Println("Total coins:",mon)
 							fmt.Println("He yells Die Cursed Scum as he dies. He was wielding a steel chest plate.")
 							time.Sleep(4 * time.Second)
 							fmt.Println("You claim it")
