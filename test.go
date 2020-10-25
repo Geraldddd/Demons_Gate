@@ -3120,8 +3120,148 @@ func main() {
 				fmt.Println("Sorry, this Part in the game is incomplete")
 				time.Sleep(4 * time.Second)
 			}else if game == 3 {
-				fmt.Println("Sorry, this Part in the game is incomplete")
-				time.Sleep(4 * time.Second)
+				for {
+					var c int
+					var d int
+					var p1hp = 100
+					var p1hpor = p1hp
+					var p1attack1 = 10
+					var p1attack2 = 30
+					var p1attack3 = 20
+					var p2hp = 100
+					var p2hpor = p2hp
+					var p2attack1 = 10
+					var p2attack2 = 30
+					var p2attack3 = 20
+					fmt.Println("Player 1 hp",p1hp,"          Player 2 hp",p2hp)
+					for battle1 := 1 ;; battle1++ {
+						time.Sleep(2 * time.Second)
+						fmt.Println("Player 1 is attacking")
+						time.Sleep(2 * time.Second)
+						fmt.Println("Player 1 hp",p1hp,"          Player 2 hp",p2hp)
+						fmt.Println()
+						fmt.Println("choose your attack")
+						fmt.Println("1.light attack ",p1attack1,"damage 100% accuracy")
+						fmt.Println("2.heavy attack ",p1attack2,"damage 75% accuracy")
+						fmt.Println("3.heal",p1attack3,"health 100% accuracy")
+						fmt.Scanln(&d)
+						if d == 1 {
+							time.Sleep(1 * time.Second)
+							fmt.Println("Player 2 took",p1attack1,"damage")
+							p2hp = p2hp - p1attack1
+							time.Sleep(1 * time.Second)
+							if p2hp <= 0 {
+								fmt.Println("Player 1 Wins")
+								break
+							}
+						} else if d == 2 {
+							var s = time.Now().UnixNano()
+							rand.Seed(s)
+							var random = rand.Intn(3)
+							if random == 1 || random == 2 || random == 3 {
+								time.Sleep(1 * time.Second)
+								p2hp = p2hp - p1attack2
+							fmt.Println("Player 2 took",p1attack2,"damage")
+							time.Sleep(1 * time.Second)
+							if p2hp <= 0 {
+								fmt.Println("Player 1 Wins")
+								break
+							}
+							} else {
+								time.Sleep(1 * time.Second)
+								fmt.Println("attack missed")
+								time.Sleep(1 * time.Second)
+							}
+						} else if d == 3 {
+							if p1hp == p1hpor {
+								time.Sleep(1 * time.Second)
+								fmt.Println("You're not low enough to heal")
+								time.Sleep(1 * time.Second)
+							} else if p1hp >= (p1hpor - p1attack3){
+								time.Sleep(1 * time.Second)
+								p1hp = p1hpor
+								fmt.Println("You have been healed to max")
+								time.Sleep(1 * time.Second)
+							} else {
+								time.Sleep(1 * time.Second)
+								p1hp = p1hp + p1attack3
+								fmt.Println("You have been healed",p1attack3,"health")
+								time.Sleep(1 * time.Second)
+							}
+						} else {
+							fmt.Println("Sorry that is an invalid command")
+						}
+						time.Sleep(2 * time.Second)
+						fmt.Println("Player 2 is attacking")
+						time.Sleep(2 * time.Second)
+						fmt.Println("Player 1 hp",p1hp,"          Player 2 hp",p2hp)
+						fmt.Println()
+						fmt.Println("choose your attack")
+						fmt.Println("1.light attack ",p2attack1,"damage 100% accuracy")
+						fmt.Println("2.heavy attack ",p2attack2,"damage 75% accuracy")
+						fmt.Println("3.heal",p2attack3,"health 100% accuracy")
+						fmt.Scanln(&d)
+						if d == 1 {
+							time.Sleep(1 * time.Second)
+							fmt.Println("Player 1 took",p2attack1,"damage")
+							p1hp = p1hp - p2attack1
+							time.Sleep(1 * time.Second)
+							if p1hp <= 0 {
+								fmt.Println("Player 2 Wins")
+								break
+							}
+						} else if d == 2 {
+							var s = time.Now().UnixNano()
+							rand.Seed(s)
+							var random = rand.Intn(3)
+							if random == 1 || random == 2 || random == 3 {
+								time.Sleep(1 * time.Second)
+								p1hp = p1hp - p2attack2
+							fmt.Println("Player 1 took",p2attack2,"damage")
+							time.Sleep(1 * time.Second)
+							if p1hp <= 0 {
+								fmt.Println("Player 2 Wins")
+								break
+							}
+							} else {
+								time.Sleep(1 * time.Second)
+								fmt.Println("attack missed")
+								time.Sleep(1 * time.Second)
+							}
+						} else if d == 3 {
+							if p2hp == p2hpor {
+								time.Sleep(1 * time.Second)
+								fmt.Println("You're not low enough to heal")
+								time.Sleep(1 * time.Second)
+							} else if p2hp >= (p2hpor - p2attack3){
+								time.Sleep(1 * time.Second)
+								p2hp = p2hpor
+								fmt.Println("You have been healed to max")
+								time.Sleep(1 * time.Second)
+							} else {
+								time.Sleep(1 * time.Second)
+								p2hp = p2hp + p2attack3
+								fmt.Println("You have been healed",p2attack3,"health")
+								time.Sleep(1 * time.Second)
+							}
+						} else {
+							fmt.Println("Sorry that is an invalid command")
+						}
+						}
+						time.Sleep(3 * time.Second)
+						fmt.Println("Would you like to play again:")
+						fmt.Println("1.Yes")
+						fmt.Println("2.No")
+						fmt.Scanln(&c)
+						if c == 1 {
+							time.Sleep(3 * time.Second)
+							fmt.Println("Starting new game")
+							time.Sleep(3 * time.Second)
+						} else {
+							time.Sleep(3 * time.Second)
+							break
+						}
+				}
 			}else if game == 4 {
 				fmt.Println("Sorry, this Part in the game is incomplete")
 				time.Sleep(4 * time.Second)
