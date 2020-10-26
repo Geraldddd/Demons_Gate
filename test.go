@@ -2789,9 +2789,9 @@ func main() {
 							attack4tr = 0
 							montr = 0
 							check = 1
-							hp2 = 320
+							hp2 = 300
 							hp2or = hp2
-							attacken1 = 50
+							attacken1 = 60
 							attacken2 = 100
 							attacken3 = 30
 							for battle1 := 1 ;; battle1++ {
