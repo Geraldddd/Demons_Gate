@@ -3134,6 +3134,7 @@ func main() {
 					var p2attack2 = 30
 					var p2attack3 = 20
 					fmt.Println("Player 1 hp",p1hp,"          Player 2 hp",p2hp)
+					fmt.Println("Aarez is screwed")
 					for battle1 := 1 ;; battle1++ {
 						time.Sleep(2 * time.Second)
 						fmt.Println("Player 1 is attacking")
