@@ -29,7 +29,7 @@ func main() {
 			var hp2 = 75
 			var hp2or = hp2
 			var hp1or = hp1
-			var attack1 = 420
+			var attack1 = 10
 			var attack2 = 30
 			var attack3 = 20
 			var attack4 = 50
@@ -375,7 +375,7 @@ func main() {
 										fmt.Println("You Win")
 										break
 									}	
-								}else {
+								} else {
 									time.Sleep(1 * time.Second)
 									fmt.Println("Enemy took",attack1,"damage")
 									hp2 = hp2-attack1
@@ -403,7 +403,7 @@ func main() {
 											fmt.Println("You Win")
 											break
 										}	
-									}else {
+									} else {
 									time.Sleep(1 * time.Second)
 									hp2 = hp2 - attack2
 									fmt.Println("Enemy took",attack2,"damage")
@@ -4297,6 +4297,7 @@ func main() {
 				time.Sleep(4 * time.Second)
 			}else if game == 3 {
 				for {
+					var e int
 					var c int
 					var d int
 					var p1hp = 100
@@ -4309,6 +4310,117 @@ func main() {
 					var p2attack1 = 10
 					var p2attack2 = 30
 					var p2attack3 = 20
+					var p1mon = 200
+					var p2mon = 200
+					fmt.Println("Player 1 is buying weapons")
+					time.Sleep(2 * time.Second)
+					for {
+						fmt.Println("What would you like to buy")
+						fmt.Println("Total Coins:",p1mon)
+						fmt.Println("1.Armor Upgrade: 50 coins")
+						fmt.Println("2.Weapon Upgrade: 50 coins")
+						fmt.Println("3.Magic Upgrade: 50 coins")
+						fmt.Println("4.Exit")
+						fmt.Scanln(&e)
+						if e == 1 {
+							if p1mon < 50{
+								time.Sleep(1 * time.Second)
+								fmt.Println("You do not have enough to buy this item")
+								time.Sleep(1 * time.Second)
+							}else{
+								p1mon = p1mon - 50
+								p1hp = p1hp + 25
+								p1hpor = p1hp
+								time.Sleep(1 * time.Second)
+								fmt.Println("Armor has been upgraded")
+								time.Sleep(1 * time.Second)
+							}
+						}else if e == 2 {
+							if p1mon < 50{
+								time.Sleep(1 * time.Second)
+								fmt.Println("You do not have enough to buy this item")
+								time.Sleep(1 * time.Second)
+							}else{
+								p1mon = p1mon - 50
+								p1attack1 = p1attack1 + 10
+								p1attack2 = p1attack2 + 10
+								time.Sleep(1 * time.Second)
+								fmt.Println("Weapons has been upgraded")
+								time.Sleep(1 * time.Second)
+							}
+						}else if e == 3{
+							if p1mon < 50{
+								time.Sleep(1 * time.Second)
+								fmt.Println("You do not have enough to buy this item")
+								time.Sleep(1 * time.Second)
+							}else{
+								p1mon = p1mon - 50
+								p1attack3 = p1attack3 + 10
+								time.Sleep(1 * time.Second)
+								fmt.Println("Magic has been upgraded")
+								time.Sleep(1 * time.Second)
+							}
+						}else{
+							time.Sleep(1 * time.Second)
+							break
+						}
+					}
+					time.Sleep(2 * time.Second)
+					fmt.Println("Player 2 is buying weapons")
+					time.Sleep(2 * time.Second)
+					for {
+						fmt.Println("What would you like to buy")
+						fmt.Println("Total Coins:",p2mon)
+						fmt.Println("1.Armor Upgrade: 50 coins")
+						fmt.Println("2.Weapon Upgrade: 50 coins")
+						fmt.Println("3.Magic Upgrade: 50 coins")
+						fmt.Println("4.Exit")
+						fmt.Scanln(&e)
+						if e == 1 {
+							if p2mon < 50{
+								time.Sleep(1 * time.Second)
+								fmt.Println("You do not have enough to buy this item")
+								time.Sleep(1 * time.Second)
+							}else{
+								p2mon = p2mon - 50
+								p2hp = p2hp + 25
+								p2hpor = p2hp
+								time.Sleep(1 * time.Second)
+								fmt.Println("Armor has been upgraded")
+								time.Sleep(1 * time.Second)
+							}
+						}else if e == 2 {
+							if p2mon < 50{
+								time.Sleep(1 * time.Second)
+								fmt.Println("You do not have enough to buy this item")
+								time.Sleep(1 * time.Second)
+							}else{
+								p2mon = p2mon - 50
+								p2attack1 = p2attack1 + 10
+								p2attack2 = p2attack2 + 10
+								time.Sleep(1 * time.Second)
+								fmt.Println("Weapons has been upgraded")
+								time.Sleep(1 * time.Second)
+							}
+						}else if e == 3{
+							if p2mon < 50{
+								time.Sleep(1 * time.Second)
+								fmt.Println("You do not have enough to buy this item")
+								time.Sleep(1 * time.Second)
+							}else{
+								p2mon = p2mon - 50
+								p2attack3 = p2attack3 + 10
+								time.Sleep(1 * time.Second)
+								fmt.Println("Magic has been upgraded")
+								time.Sleep(1 * time.Second)
+							}
+						}else{
+							time.Sleep(1 * time.Second)
+							break
+						}
+					}
+					fmt.Println("Battle is starting")
+					time.Sleep(2 * time.Second)
 					fmt.Println("Player 1 hp",p1hp,"          Player 2 hp",p2hp)
 					for battle1 := 1 ;; battle1++ {
 						time.Sleep(2 * time.Second)
@@ -4322,27 +4434,57 @@ func main() {
 						fmt.Println("3.heal",p1attack3,"health 100% accuracy")
 						fmt.Scanln(&d)
 						if d == 1 {
-							time.Sleep(1 * time.Second)
-							fmt.Println("Player 2 took",p1attack1,"damage")
-							p2hp = p2hp - p1attack1
-							time.Sleep(1 * time.Second)
-							if p2hp <= 0 {
-								fmt.Println("Player 1 Wins")
-								break
+							var s = time.Now().UnixNano()
+							rand.Seed(s)
+							var random = rand.Intn(8)
+							if random == 0 {
+								p2hp = p2hp - p2attack1 * 3 / 2
+								fmt.Println("Critical Hit")
+								time.Sleep(1 * time.Second)
+								fmt.Println("Player 2 took",p1attack1 + (p1attack1 / 2),"damage")
+								time.Sleep(1 * time.Second)
+								if p2hp <= 0 {
+									fmt.Println("Player 1 Wins")
+									break
+								}
+							}else {
+								time.Sleep(1 * time.Second)
+								fmt.Println("Player 2 took",p1attack1,"damage")
+								p2hp = p2hp - p1attack1
+								time.Sleep(1 * time.Second)
+								if p2hp <= 0 {
+									fmt.Println("Player 1 Wins")
+									break
+								}
 							}
 						} else if d == 2 {
 							var s = time.Now().UnixNano()
 							rand.Seed(s)
 							var random = rand.Intn(3)
 							if random == 1 || random == 2 || random == 3 {
+								var s = time.Now().UnixNano()
+								rand.Seed(s)
+								var random = rand.Intn(8)
+								if random == 3 {
+									p2hp = p2hp - p1attack2 * 3 / 2
+									fmt.Println("Critical Hit")
+									time.Sleep(1 * time.Second)
+									fmt.Println("Player 2 took",p1attack2 + (p1attack2 / 2),"damage")
+									time.Sleep(1 * time.Second)
+									if p2hp <= 0 {
+										fmt.Println("Player 1 Wins")
+										break
+									}	
+								} else {
+									time.Sleep(1 * time.Second)
+									p2hp = p2hp - p1attack2
+								fmt.Println("Player 2 took",p1attack2,"damage")
 								time.Sleep(1 * time.Second)
-								p2hp = p2hp - p1attack2
-							fmt.Println("Player 2 took",p1attack2,"damage")
-							time.Sleep(1 * time.Second)
-							if p2hp <= 0 {
-								fmt.Println("Player 1 Wins")
-								break
-							}
+								if p2hp <= 0 {
+									fmt.Println("Player 1 Wins")
+									break
+								}
+								}
 							} else {
 								time.Sleep(1 * time.Second)
 								fmt.Println("attack missed")
@@ -4378,27 +4520,57 @@ func main() {
 						fmt.Println("3.heal",p2attack3,"health 100% accuracy")
 						fmt.Scanln(&d)
 						if d == 1 {
-							time.Sleep(1 * time.Second)
-							fmt.Println("Player 1 took",p2attack1,"damage")
-							p1hp = p1hp - p2attack1
-							time.Sleep(1 * time.Second)
-							if p1hp <= 0 {
-								fmt.Println("Player 2 Wins")
-								break
+							var s = time.Now().UnixNano()
+							rand.Seed(s)
+							var random = rand.Intn(8)
+							if random == 0 {
+								p1hp = p1hp - p2attack1 * 3 / 2
+								fmt.Println("Critical Hit")
+								time.Sleep(1 * time.Second)
+								fmt.Println("Player 1 took",p2attack1 + (p2attack1 / 2),"damage")
+								time.Sleep(1 * time.Second)
+								if p1hp <= 0 {
+									fmt.Println("Player 2 Wins")
+									break
+								}
+							}else {
+								time.Sleep(1 * time.Second)
+								fmt.Println("Player 1 took",p2attack1,"damage")
+								p1hp = p1hp - p2attack1
+								time.Sleep(1 * time.Second)
+								if p1hp <= 0 {
+									fmt.Println("Player 2 Wins")
+									break
+								}
 							}
 						} else if d == 2 {
 							var s = time.Now().UnixNano()
 							rand.Seed(s)
 							var random = rand.Intn(3)
 							if random == 1 || random == 2 || random == 3 {
-								time.Sleep(1 * time.Second)
-								p1hp = p1hp - p2attack2
-							fmt.Println("Player 1 took",p2attack2,"damage")
-							time.Sleep(1 * time.Second)
-							if p1hp <= 0 {
-								fmt.Println("Player 2 Wins")
-								break
-							}
+								var s = time.Now().UnixNano()
+								rand.Seed(s)
+								var random = rand.Intn(8)
+								if random == 3 {
+									p1hp = p1hp - p2attack2 * 3 / 2
+									fmt.Println("Critical Hit")
+									time.Sleep(1 * time.Second)
+									fmt.Println("Player 2 took",p2attack2 + (p2attack2 / 2),"damage")
+									time.Sleep(1 * time.Second)
+									if p1hp <= 0 {
+										fmt.Println("Player 2 Wins")
+										break
+									}	
+								} else {
+										time.Sleep(1 * time.Second)
+										p1hp = p1hp - p2attack2
+									fmt.Println("Player 1 took",p2attack2,"damage")
+									time.Sleep(1 * time.Second)
+									if p1hp <= 0 {
+										fmt.Println("Player 2 Wins")
+										break
+									}
+								}
 							} else {
 								time.Sleep(1 * time.Second)
 								fmt.Println("attack missed")
