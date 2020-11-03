@@ -4314,7 +4314,7 @@ func main() {
 					var p2attack3 = 20
 					var p1mon = 200
 					var p2mon = 200
-					fmt.Println("Player 1 is buying weapons")
+					fmt.Println("Player 1 is buying supplies")
 					time.Sleep(2 * time.Second)
 					for {
 						fmt.Println("What would you like to buy")
@@ -4368,7 +4368,7 @@ func main() {
 						}
 					}
 					time.Sleep(2 * time.Second)
-					fmt.Println("Player 2 is buying weapons")
+					fmt.Println("Player 2 is buying suplies")
 					time.Sleep(2 * time.Second)
 					for {
 						fmt.Println("What would you like to buy")
