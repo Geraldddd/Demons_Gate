@@ -4293,19 +4293,204 @@ func main() {
 							time.Sleep(5 * time.Second)
 							fmt.Println("You thank him and continue forwards")
 							time.Sleep(5 * time.Second)
-							//var attack5 = 10
-				    		//var attacken4 = 10
-							fmt.Println("Dark magic upgraded")
+							var poip = 10
+							var cursep = 50
+							var hpst = 30
+							poip = poip + 1
+							fmt.Println("Poison potion collected")
 							time.Sleep(5 * time.Second)
 							fmt.Println("As you continue forwards you realize spread throughout the entire castle is a mercantile system.")
 							time.Sleep(5 * time.Second)
-							fmt.Println("Which shop would you like to go?")
-							fmt.Println("1.Pet Shop")
-							fmt.Println("2.Weapon Shop")
-							fmt.Println("3.Armor Shop")
-							fmt.Println("4.Magic shop")
-							fmt.Println("5.Dark potions shop")
-							fmt.Scanln(&a)
+							for {
+								time.Sleep(2 * time.Second)
+								fmt.Println("Which shop would you like to go?")
+								fmt.Println("Total Coins:",mon)
+								fmt.Println("1.Weapon Shop")
+								fmt.Println("2.Armor Shop")
+								fmt.Println("3.Magic shop")
+								fmt.Println("4.Dark potions shop")
+								fmt.Println("5.Exit")
+								fmt.Scanln(&a)
+								time.Sleep(2 * time.Second)
+								if a == 1 {
+									fmt.Println("What would you like to buy?")
+									fmt.Println("Total Coins:",mon)
+									fmt.Println("1.Light upgrade: 30 coins")
+									fmt.Println("2.Heavy upgrade: 30 coins")
+									fmt.Println("3.Ultimate upgrade: 30 coins")
+									fmt.Println("4.Go back")
+									fmt.Scanln(&b)
+									time.Sleep(2 * time.Second)
+									if b == 1 {
+										if mon < 30 {
+											time.Sleep(1 * time.Second)
+											fmt.Println("You do not have enough to buy this item")
+											time.Sleep(1 * time.Second)
+										}else{
+											mon = mon - 30
+											fmt.Println("Light attack upgraded")
+											attack1 = attack1 + 10
+										}
+									} else if b == 2 {
+										if mon < 30 {
+											time.Sleep(1 * time.Second)
+											fmt.Println("You do not have enough to buy this item")
+											time.Sleep(1 * time.Second)
+										} else {
+											mon = mon - 30
+											fmt.Println("Heavy attack upgraded")
+											attack2 = attack2 + 10
+										}
+									} else if b == 3 {
+										if mon < 30 {
+											time.Sleep(1 * time.Second)
+											fmt.Println("You do not have enough to buy this item")
+											time.Sleep(1 * time.Second)
+										} else {
+											mon = mon - 30
+											fmt.Println("Ultimate attack upgraded")
+											attack4 = attack4 + 15
+										}
+									} else {
+										continue
+									}
+								} else if a == 2 {
+									fmt.Println("What would you like to buy?")
+									fmt.Println("Total Coins:",mon)
+									fmt.Println("1.Helmet upgrade: 30 coins")
+									fmt.Println("2.Chestplate upgrade: 40 coins")
+									fmt.Println("3.Go back")
+									fmt.Scanln(&b)
+									time.Sleep(2 * time.Second)
+									if b == 1 {
+										if mon < 30 {
+											time.Sleep(1 * time.Second)
+											fmt.Println("You do not have enough to buy this item")
+											time.Sleep(1 * time.Second)
+										} else {
+											mon = mon - 30
+											fmt.Println("Helmet upgraded")
+											hp1 = hp1 + 10
+											hp1or = hp1
+										}
+									} else if b == 2 {
+										if mon < 40 {
+											time.Sleep(1 * time.Second)
+											fmt.Println("You do not have enough to buy this item")
+											time.Sleep(1 * time.Second)
+										} else {
+											mon = mon - 40
+											fmt.Println("Chestplate upgraded")
+											hp1 = hp1 + 20
+											hp1or = hp1
+										}
+									} else {
+										continue
+									}									
+								} else if a == 3 {
+									fmt.Println("What would you like to buy?")
+									fmt.Println("Total Coins:",mon)
+									fmt.Println("1.Small magic upgrade: 30 coins")
+									fmt.Println("2.Medium magic upgrade: 40 coins")
+									fmt.Println("3.Large magic upgrade: 50 coins")
+									fmt.Println("4.Go back")
+									fmt.Scanln(&b)
+									time.Sleep(2 * time.Second)
+									if b == 1 {
+										if mon < 30 {
+											time.Sleep(1 * time.Second)
+											fmt.Println("You do not have enough to buy this item")
+											time.Sleep(1 * time.Second)
+										} else {
+											mon = mon - 30
+											fmt.Println("Magic upgraded")
+											attack3 = attack3 + 10
+										}
+									} else if b == 2 {
+										if mon < 40 {
+											time.Sleep(1 * time.Second)
+											fmt.Println("You do not have enough to buy this item")
+											time.Sleep(1 * time.Second)
+										} else {
+											mon = mon - 40
+											fmt.Println("Magic upgraded")
+											attack3 = attack3 + 15
+										}
+									} else if b == 3 {
+										if mon < 50 {
+											time.Sleep(1 * time.Second)
+											fmt.Println("You do not have enough to buy this item")
+											time.Sleep(1 * time.Second)
+										} else {
+											mon = mon - 50
+											fmt.Println("Magic upgraded")
+											attack3 = attack3 + 20
+										}
+									} else {
+										continue
+									}
+								} else if a == 4{
+									fmt.Println("What would you like to buy?")
+									fmt.Println("Total Coins:",mon)
+									fmt.Println("1.Poison potion: 20 coins")
+									fmt.Println("2.Curse potion: 30 coins")
+									fmt.Println("3.Life steal potion: 40 coins")
+									fmt.Println("4.Go back")
+									fmt.Scanln(&b)
+									time.Sleep(2 * time.Second)
+									if b == 1 {
+										if mon < 20 {
+											time.Sleep(1 * time.Second)
+											fmt.Println("You do not have enough to buy this item")
+											time.Sleep(1 * time.Second)
+										} else {
+											mon = mon - 20
+											fmt.Println("Dark potion added")
+											poip = poip + 1
+										}
+									} else if b == 2 {
+										if mon < 30 {
+											time.Sleep(1 * time.Second)
+											fmt.Println("You do not have enough to buy this item")
+											time.Sleep(1 * time.Second)
+										} else {
+											mon = mon - 30
+											fmt.Println("Dark potion added")
+											cursep = cursep + 1
+										}
+									} else if b == 3 {
+										if mon < 40 {
+											time.Sleep(1 * time.Second)
+											fmt.Println("You do not have enough to buy this item")
+											time.Sleep(1 * time.Second)
+										} else {
+											mon = mon - 40
+											fmt.Println("Dark potion added")
+											hpst = hpst + 1
+										}
+									} else {
+										continue
+									}
+								} else {
+									time.Sleep(2 * time.Second)
+									break
+								}
+							}
+							fmt.Println("You buy what you need, with the gold you obtained from all previous battles.")
+							time.Sleep(5 * time.Second)
+							fmt.Println("The people of what was once known as Toadstool castle are being oppressed by the fallen king, sent by Hell Lord Hades to manage the castle.")
+							time.Sleep(5 * time.Second)
+							fmt.Println("The old king was beheaded in the main square of the castle. You must avenge him.")
+							time.Sleep(5 * time.Second)
+							fmt.Println("You continue on through the courtyard, until you realize that the castle is completely deserted of enemies. Where do you go?")
+							fmt.Println("1.Throne room")
+							fmt.Println("2'Exit Castle")
+							fmt.Println("3.Enter Dungeon")
+							fmt.Println("4.Hide")
+							fmt.Scanln(&b)
+							if b == 1 {
+								
+							}
 			} else if game == 2 {
 				fmt.Println("Sorry, this Part in the game is incomplete")
 				time.Sleep(4 * time.Second)
@@ -4628,8 +4813,29 @@ func main() {
 				fmt.Println("Sorry, this Part in the game is incomplete")
 				time.Sleep(4 * time.Second)
 			}else {
-				fmt.Println("Sorry, this Part in the game is incomplete")
-				time.Sleep(4 * time.Second)
+				var c int
+				for {
+					fmt.Println("1.How to play Campaign")
+					fmt.Println("2.How to play PVP")
+					fmt.Println("3.How to play Playground")
+					fmt.Println("4.How to play Co-op")
+					fmt.Println("5.Back")
+					fmt.Scanln(&c)
+					time.Sleep(1 * time.Second)
+					if c == 1 {
+						fmt.Println("The game will ask you questions and you get to choose what to do based on the choices.")
+						fmt.Println("In campaign mode your choices affect the results. You can level up and fight bosses to complete the game.")
+					} else if c == 2 {
+						fmt.Println("The PVP mode allows you to play against your friends, Before each PVP match you have time to buy supplies and prepare to face your friend.")
+					} else if c == 3 {
+						fmt.Println("Playground mode gives you infinite coins, health, and damage.")
+					}else if c == 4 {
+						fmt.Println("Co-op allows you to play with your friend and fight bosses.")
+					} else {
+						break
+					}
+					time.Sleep(5 * time.Second)
+				}
 			}
 		}
 	}
