@@ -3827,7 +3827,7 @@ func main() {
 							hp2 = 300
 							hp2or = hp2
 							attacken1 = 60
-							attacken2 = 100
+							attacken2 = 90
 							attacken3 = 30
 							for battle1 := 1 ;; battle1++ {
 								if battle1 % 10 == 0 {
@@ -4040,7 +4040,7 @@ func main() {
 							montr = 0
 							break
 						}
-							attack3 = attack3 + 30
+							attack3 = attack3 + 15
 							time.Sleep(1 * time.Second)
 							fmt.Println("You Don't kill Zeus, you have knocked the curse out of him. He recovers and thanks you.")
 							time.Sleep(4 * time.Second)
@@ -4316,7 +4316,7 @@ func main() {
 							time.Sleep(4 * time.Second)
 							fmt.Println("You carry on through the tight corridors, and encounter a sad weapon smith.")
 							time.Sleep(5 * time.Second)
-							fmt.Println("He is creating a sword, longer than you have ever seen. He has a pile  of a variety of weapons. you approach him.")
+							fmt.Println("He is creating a sword, longer than you have ever seen. He has a pile of a variety of weapons. you approach him.")
 							time.Sleep(5 * time.Second)
 							fmt.Println("Greatings ashen one, He says while looking up from his anvil")
 							time.Sleep(5 * time.Second)
@@ -4511,20 +4511,20 @@ func main() {
 									break
 								}
 							}
-							fmt.Println("You buy what you need, with the gold you obtained from all previous battles.")
-							time.Sleep(5 * time.Second)
-							fmt.Println("The people of what was once known as Toadstool castle are being oppressed by the fallen king, sent by Hell Lord Hades to manage the castle.")
-							time.Sleep(5 * time.Second)
-							fmt.Println("The old king was beheaded in the main square of the castle. You must avenge him.")
-							time.Sleep(5 * time.Second)
-							fmt.Println("You continue on through the courtyard, until you realize that the castle is completely deserted of enemies. Where do you go?")
-							fmt.Println("1.Throne room")
-							fmt.Println("2.Exit Castle")
-							fmt.Println("3.Enter Dungeon")
-							fmt.Println("4.Hide")
-							fmt.Scanln(&b)
-							time.Sleep(3 * time.Second)
 							for {
+								check = 1
+								fmt.Println("You buy what you need, with the gold you obtained from all previous battles.")
+								time.Sleep(5 * time.Second)
+								fmt.Println("The people of what was once known as Toadstool castle are being oppressed by the fallen king, sent by Hell Lord Hades to manage the castle.")
+								time.Sleep(5 * time.Second)
+								fmt.Println("The old king was beheaded in the main square of the castle. You must avenge him.")
+								time.Sleep(5 * time.Second)
+								fmt.Println("You continue on through the courtyard, until you realize that the castle is completely deserted of enemies. Where do you go?")
+								fmt.Println("1.Throne room")
+								fmt.Println("2.Exit Castle")
+								fmt.Println("3.Enter Dungeon")
+								fmt.Println("4.Hide")
+								fmt.Scanln(&b)
 								if b == 1 {
 									fmt.Println("The Throne room is completely trapped.")
 									time.Sleep(5 * time.Second)
@@ -4561,6 +4561,7 @@ func main() {
 								}
 								break
 							}
+							time.Sleep(3 * time.Second)
 							fmt.Println("After proceeding up the stairs, you enter the Fallen kings lair, and see a terrible dream. Betrayal.")
 							time.Sleep(5 * time.Second)
 							fmt.Println("You ignore it and carry on. You search to fight the fallen king, but encounter A Royal Servant!")
@@ -4930,7 +4931,7 @@ func main() {
 								check = 1
 								rpoip = 0
 								rcursep = 0
-								hp2 = 320
+								hp2 = 700
 								hp2or = hp2
 								attacken1 = 50
 								attacken2 = 120
