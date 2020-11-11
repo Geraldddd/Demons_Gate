@@ -4811,25 +4811,84 @@ func main() {
 				}
 			}else if game == 4 {
 				for {
+					var check int
+					var a int
+					var attack1 = 10
+					var attack2 = 30
+					var attack3 = 20
+					var attack4 = 50
+					var b int
+					var mon = 300
 					var hp1 = 100
 					var	hp1or = hp1
+					var hp2 = 70
+					var	hp2or = hp2
+					var attacken1 = 5
+					var attacken2 = 15
+					var attacken3 = 5
 					fmt.Println("Welcome to Survival")
 					time.Sleep(3 * time.Second)
-					fmt.Println("Buying weapons")
+					fmt.Println("Buying supplies")
 					time.Sleep(3 * time.Second)
+					for {
+						fmt.Println("What would you like to buy")
+						fmt.Println("Total Coins:",mon)
+						fmt.Println("1.Armor Upgrade: 50 coins")
+						fmt.Println("2.Weapon Upgrade: 50 coins")
+						fmt.Println("3.Magic Upgrade: 50 coins")
+						fmt.Println("4.Exit")
+						fmt.Scanln(&b)
+						if b == 1 {
+							if mon < 50{
+								time.Sleep(1 * time.Second)
+								fmt.Println("You do not have enough to buy this item")
+								time.Sleep(1 * time.Second)
+							}else{
+								mon = mon - 50
+								hp1 = hp1 + 25
+								hp1or = hp1
+								time.Sleep(1 * time.Second)
+								fmt.Println("Armor has been upgraded")
+								time.Sleep(1 * time.Second)
+							}
+						}else if b == 2 {
+							if mon < 50{
+								time.Sleep(1 * time.Second)
+								fmt.Println("You do not have enough to buy this item")
+								time.Sleep(1 * time.Second)
+							}else{
+								mon = mon - 50
+								attack1 = attack1 + 10
+								attack2 = attack2 + 10
+								attack4 = attack4 + 15
+								time.Sleep(1 * time.Second)
+								fmt.Println("Weapons has been upgraded")
+								time.Sleep(1 * time.Second)
+							}
+						}else if b == 3{
+							if mon < 50{
+								time.Sleep(1 * time.Second)
+								fmt.Println("You do not have enough to buy this item")
+								time.Sleep(1 * time.Second)
+							}else{
+								mon = mon - 50
+								attack3 = attack3 + 10
+								time.Sleep(1 * time.Second)
+								fmt.Println("Magic has been upgraded")
+								time.Sleep(1 * time.Second)
+							}
+						}else{
+							time.Sleep(1 * time.Second)
+							break
+						}
+					}
+					fmt.Println("Round:1")
 					for sur := 2 ;; sur++{
-						var check int
-						var a int
-						var b int
-						var hp2 = 75
-						var	hp2or = hp2
-						var attacken1 = 10
-						var attacken2 = 20
-						var attacken3 = 10
-						var attack1 = 10
-						var attack2 = 30
-						var attack3 = 20
-						var attack4 = 50
+						attacken1 = attacken1 + 5
+						attacken2 = attacken2 + 5
+						attacken3 = attacken3 + 5
+						hp2 = hp2 + 5
+						hp2or = hp2
 						time.Sleep(2 * time.Second)	
 						for battle1 := 1 ;; battle1++ {
 							if battle1 % 10 == 0 {
@@ -4978,15 +5037,21 @@ func main() {
 									time.Sleep(1 * time.Second)
 									if hp1 <= 0 {
 										fmt.Println("You Died")
+										time.Sleep(1 * time.Second)	
+										fmt.Println("Congragulations! You lasted",sur - 1,"rounds")
+										time.Sleep(4 * time.Second)	
 										check = 2
 										break
 									}	
-								}else {
+								} else {
 									fmt.Println("you took",attacken1,"damage")
 									hp1 = hp1-attacken1
 									time.Sleep(1 * time.Second)
 									if hp1 <= 0 {
 										fmt.Println("You Died")
+										time.Sleep(1 * time.Second)	
+										fmt.Println("Congragulations! You lasted",sur - 1,"rounds")
+										time.Sleep(4 * time.Second)	
 										check = 2
 										break
 									}
@@ -5007,6 +5072,9 @@ func main() {
 											time.Sleep(1 * time.Second)
 											if hp1 <= 0 {
 												fmt.Println("You Died")
+												time.Sleep(1 * time.Second)	
+												fmt.Println("Congragulations! You lasted",sur - 1,"rounds")
+												time.Sleep(4 * time.Second)	
 												check = 2
 												break
 											}	
@@ -5017,6 +5085,9 @@ func main() {
 											if hp1 <= 0 {
 												fmt.Println("You Died")
 												check = 2
+												time.Sleep(1 * time.Second)	
+												fmt.Println("Congragulations! You lasted",sur - 1,"rounds")
+												time.Sleep(4 * time.Second)	
 												break
 											}
 										}
@@ -5027,6 +5098,7 @@ func main() {
 									}
 								}
 							}
+							hp2 = hp2or
 							time.Sleep(1 * time.Second)	
 							if check == 2 {
 								time.Sleep(1 * time.Second)	
@@ -5037,8 +5109,6 @@ func main() {
 								continue
 							}
 					}
-					var a int
-					time.Sleep(1 * time.Second)	
 					fmt.Println("Would you like to play again")
 					fmt.Println("1.Yes")
 					fmt.Println("2.No")
@@ -5048,6 +5118,7 @@ func main() {
 						time.Sleep(3 * time.Second)	
 						continue
 					} else {
+						time.Sleep(3 * time.Second)	
 						break
 					}
 				}
@@ -5069,7 +5140,7 @@ func main() {
 					} else if c == 3 {
 						fmt.Println("Playground mode gives you infinite coins, health, and damage.")
 					}else if c == 4 {
-						fmt.Println("Survival is where you fight a series of enemys until you die")
+						fmt.Println("Survival is where you fight a series of enemys until you die. Each round the enemy gets stronger.")
 					} else {
 						break
 					}
