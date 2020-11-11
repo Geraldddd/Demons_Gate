@@ -4480,7 +4480,7 @@ func main() {
 							time.Sleep(5 * time.Second)
 							fmt.Println("You continue on through the courtyard, until you realize that the castle is completely deserted of enemies. Where do you go?")
 							fmt.Println("1.Throne room")
-							fmt.Println("2'Exit Castle")
+							fmt.Println("2.Exit Castle")
 							fmt.Println("3.Enter Dungeon")
 							fmt.Println("4.Hide")
 							fmt.Scanln(&b)
