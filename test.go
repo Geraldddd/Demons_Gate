@@ -4220,8 +4220,7 @@ func main() {
 										time.Sleep(1 * time.Second)
 										if hp1 <= 0 {
 											fmt.Println("You Died")
-											check = 2
-											break
+											return
 										}	
 									}else {
 										fmt.Println("you took",attacken1,"damage")
@@ -4229,8 +4228,7 @@ func main() {
 										time.Sleep(1 * time.Second)
 										if hp1 <= 0 {
 											fmt.Println("You Died")
-											check = 2
-											break
+											return
 										}
 									}
 								} else {
@@ -4249,8 +4247,7 @@ func main() {
 												time.Sleep(1 * time.Second)
 												if hp1 <= 0 {
 													fmt.Println("You Died")
-													check = 2
-													break
+													return
 												}	
 											}else {
 												fmt.Println("you took",attacken2,"damage")
@@ -4258,8 +4255,7 @@ func main() {
 												time.Sleep(1 * time.Second)	
 												if hp1 <= 0 {
 													fmt.Println("You Died")
-													check = 2
-													break
+													return
 												}
 											}
 										} else {
@@ -4488,8 +4484,34 @@ func main() {
 							fmt.Println("3.Enter Dungeon")
 							fmt.Println("4.Hide")
 							fmt.Scanln(&b)
+							time.Sleep(3 * time.Second)
 							if b == 1 {
-								
+								fmt.Println("The Throne room is completely trapped.")
+								time.Sleep(5 * time.Second)
+								fmt.Println("You turn around to attempt to open the door, but you see the shopkeeper from Map 1. At first thought.")
+								time.Sleep(5 * time.Second)
+								fmt.Println("You think he is cursed, but he looks just like before. He pulls out a fiery sword. Long Live Hades, He utters")
+								time.Sleep(5 * time.Second)
+								fmt.Println("He pushes you to the ground and points the sword towards your throat.")
+								time.Sleep(5 * time.Second)
+								fmt.Println("At this moment, you realize that Mystic Woods was a scapegoat, to lure you into a trap.")
+								time.Sleep(5 * time.Second)
+								fmt.Println("The shopkeeper stabs the flaming sword into your back, you feel a wave of pain until you fall into a forever darkness.")
+								time.Sleep(3 * time.Second)
+								return
+							} else if b == 2 {
+								fmt.Println("You exit the castle, but enemies pour out of the bushes and kill you.")
+								return
+							} else if b == 3 {
+								fmt.Println("You enter the dungeons, and see the old king, he is in bad shape.")
+								time.Sleep(5 * time.Second)
+								fmt.Println("He speaks to you about the Fallen King's weakness, and you now feel confident in beating him.")
+								time.Sleep(5 * time.Second)
+								fmt.Println("Light Attacks. You thank the King, and vow to free him when the threat is over. You proceed up the stairs.")
+								time.Sleep(3 * time.Second)
+							} else {
+								fmt.Println("You hide but you are found by guards and executed.")
+								return
 							}
 			} else if game == 2 {
 				fmt.Println("Sorry, this Part in the game is incomplete")
