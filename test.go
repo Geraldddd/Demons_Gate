@@ -4931,7 +4931,7 @@ func main() {
 								check = 1
 								rpoip = 0
 								rcursep = 0
-								hp2 = 700
+								hp2 = 1200
 								hp2or = hp2
 								attacken1 = 50
 								attacken2 = 120
