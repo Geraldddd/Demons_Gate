@@ -5003,7 +5003,7 @@ func main() {
 										} else {
 											time.Sleep(1 * time.Second)
 											fmt.Println("Enemy took",attack1 * 2,"damage")
-											hp2 = hp2-attack1
+											hp2 = hp2 - attack1 * 2
 											time.Sleep(1 * time.Second)
 											if hp2 <= 0 {
 												fmt.Println("You Win")
