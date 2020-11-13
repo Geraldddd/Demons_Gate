@@ -4931,7 +4931,7 @@ func main() {
 								check = 1
 								rpoip = 0
 								rcursep = 0
-								hp2 = 1200
+								hp2 = 1100
 								hp2or = hp2
 								attacken1 = 50
 								attacken2 = 120
@@ -5278,6 +5278,9 @@ func main() {
 								fmt.Println("You run into Hellbent Woods, and locate a sleeping elite guard. Stealthily, you go around him and twist his neck.")
 								time.Sleep(5 * time.Second)
 								fmt.Println("You take his sword, and enter battle with the Guard.")
+								attack1 = 130
+								attack2 = 90
+								attack4 = 200
 							} else {
 								time.Sleep(2 * time.Second)
 								fmt.Println("The cart gets fixed, and Hades executes you ")
@@ -5579,6 +5582,20 @@ func main() {
 									}
 								}
 							hp1 = hp1or
+							time.Sleep(2 * time.Second)
+							fmt.Println("You continue with the wolf. The Wolf has now became your companion.")
+							time.Sleep(5 * time.Second)
+							fmt.Println("You reclaim your armor from the guard, and proceed towards the castle, where Hades is at the moment.")
+							time.Sleep(5 * time.Second)
+							fmt.Println("He expects you as a prisoner in his presence, but little does he know, he will see fate in a matter of time.")
+							time.Sleep(5 * time.Second)
+							fmt.Println("You run towards the castle, but feel something grab your arm. It is a Hades Council Member.")
+							time.Sleep(5 * time.Second)
+							fmt.Println("He says Greetings, Ashen One You realize he is a spy.")
+							time.Sleep(5 * time.Second)
+							fmt.Println("he takes you into the Woods, and see a system of refugees in a camp. There are shops there.")
+							time.Sleep(5 * time.Second)
+							fmt.Println("Where would you like to go?")
 			} else if game == 2 {
 				fmt.Println("Sorry, this Part in the game is incomplete")
 				time.Sleep(4 * time.Second)
