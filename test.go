@@ -29,7 +29,7 @@ func main() {
 			var hp2 = 75
 			var hp2or = hp2
 			var hp1or = hp1
-			var attack1 = 10
+			var attack1 = 100000
 			var attack2 = 30
 			var attack3 = 20
 			var attack4 = 50
@@ -5959,6 +5959,10 @@ func main() {
 											time.Sleep(1 * time.Second)
 											fmt.Println("Your pet did",petat,"damage")
 										}
+										if hp2 <= 0 {
+											fmt.Println("You Win")
+											break
+										}	
 									}
 									time.Sleep(1 * time.Second)
 									fmt.Println("enemy is attacking")
@@ -6324,6 +6328,10 @@ func main() {
 											time.Sleep(1 * time.Second)
 											fmt.Println("Your pet did",petat,"damage")
 										}
+										if hp2 <= 0 {
+											fmt.Println("You Win")
+											break
+										}	
 									}
 									time.Sleep(1 * time.Second)
 									fmt.Println("enemy is attacking")
@@ -6457,94 +6465,112 @@ func main() {
 							for space := 1 ; space <=100 ; space++{
 								fmt.Println()
 							}
-							fmt.Println("You wake up, lost, in a forest, with no memory to recall.")
-							time.Sleep(4 * time.Second)
-							fmt.Println("The leaves of the trees, blocked the sunlight from the two suns.")
-							time.Sleep(4 * time.Second)
-							fmt.Println("You notice a sword in your hand, in horrible condition.") 
-							time.Sleep(4 * time.Second)
-							fmt.Println("Confused, you get up, despite the physical pain, You march forward in hope to find life, but it is hopeless.")
-							time.Sleep(4 * time.Second)
-							fmt.Println("Suddenly, you are shocked with an impact to the back of your head. It's a toad.")
-							time.Sleep(4 * time.Second)
-							fmt.Println("HAHAHAHAHHA! Laughs a sinister voice. My minion almost KILLED You! I'm TOAD MAN!")
-							time.Sleep(4 * time.Second)
-							fmt.Println("Toad man attacks right.")
-							fmt.Println("1.Block left")
-							fmt.Println("2.Block right")
-							fmt.Println("3.Duck")
-							fmt.Scanln(&b)
-							time.Sleep(2 * time.Second)	
 							for {
-								check = 1
-								if b == 1 {
-									fmt.Println("Toad man killed you")
-									check = 2
-								} else if b == 2 {
-									fmt.Println("You blocked Toad man's attack")
-								} else {
-									fmt.Println("Toad man killed you")
-									check = 2
-								}
-								time.Sleep(2 * time.Second)	
-								fmt.Println("YOU WONT BEAT ME!")
-								time.Sleep(2 * time.Second)	
-								fmt.Println("Toad man uses lightning bolt.")
+								fmt.Println("You wake up, lost, in a forest, with no memory to recall.")
+								time.Sleep(4 * time.Second)
+								fmt.Println("The leaves of the trees, blocked the sunlight from the two suns.")
+								time.Sleep(4 * time.Second)
+								fmt.Println("You notice a sword in your hand, in horrible condition.") 
+								time.Sleep(4 * time.Second)
+								fmt.Println("Confused, you get up, despite the physical pain, You march forward in hope to find life, but it is hopeless.")
+								time.Sleep(4 * time.Second)
+								fmt.Println("Suddenly, you are shocked with an impact to the back of your head. It's a toad.")
+								time.Sleep(4 * time.Second)
+								fmt.Println("HAHAHAHAHHA! Laughs a sinister voice. My minion almost KILLED You! I'm TOAD MAN!")
+								time.Sleep(4 * time.Second)
+								fmt.Println("Toad man attacks right.")
 								fmt.Println("1.Block left")
 								fmt.Println("2.Block right")
-								fmt.Println("3.Roll")
+								fmt.Println("3.Duck")
 								fmt.Scanln(&b)
-								time.Sleep(2 * time.Second)	
-								if b == 1 {
-									fmt.Println("Toad man killed you")
-									check = 2
-								} else if b == 2 {
-									fmt.Println("Toad man killed you")
-									check = 2
-								} else {
-									fmt.Println("You rolled under the lightning bolt")
-								}
-								time.Sleep(2 * time.Second)	
-								fmt.Println("EVIL SHALL RULE ALL!")
-								time.Sleep(2 * time.Second)	
-								fmt.Println("Toad Man Slashes Through middle!")
-								fmt.Println("1.Parry")
-								fmt.Println("2.Duck")
-								fmt.Println("3.Block left")
-								fmt.Scanln(&b)
-								time.Sleep(2 * time.Second)	
-								if b == 1 {
-									fmt.Println("You dodged his attack")
-								} else if b == 2 {
-									fmt.Println("Toad man killed you")
-									check = 2
-								} else {
-									fmt.Println("Toad man killed you")
-									check = 2							
-								}
-								time.Sleep(2 * time.Second)	
-								fmt.Println("Toad man uses and ariel attack. DIE!")
-								fmt.Println("1.Uppercut")
-								fmt.Println("2.Dive")
-								fmt.Println("3.Parry")
-								fmt.Scanln(&b)
-								time.Sleep(2 * time.Second)	
-								if b == 1 {
-									fmt.Println("You punch Toad man in the face.")
-								} else if b == 2 {
-									fmt.Println("Toad man killed you")
-									check = 2
-								} else {
-									fmt.Println("Toad man killed you")
-									check = 2
-								}
-								if check == 2 {
-									time.Sleep(2 * time.Second)
-									fmt.Println("Respawning")
-									time.Sleep(5 * time.Second)
-									continue
-								}
-								break
+								time.Sleep(2 * time.Second)
+									check = 1
+									if b == 1 {
+										fmt.Println("Toad man killed you")
+										time.Sleep(2 * time.Second)
+										fmt.Println("Respawing")
+										time.Sleep(4 * time.Second)
+										continue
+									} else if b == 2 {
+										fmt.Println("You blocked Toad man's attack")
+									} else {
+										fmt.Println("Toad man killed you")
+										time.Sleep(2 * time.Second)
+										fmt.Println("Respawing")
+										time.Sleep(4 * time.Second)
+										continue
+									}
+									time.Sleep(2 * time.Second)	
+									fmt.Println("YOU WONT BEAT ME!")
+									time.Sleep(2 * time.Second)	
+									fmt.Println("Toad man uses lightning bolt.")
+									fmt.Println("1.Block left")
+									fmt.Println("2.Block right")
+									fmt.Println("3.Roll")
+									fmt.Scanln(&b)
+									time.Sleep(2 * time.Second)	
+									if b == 1 {
+										fmt.Println("Toad man killed you")
+										time.Sleep(2 * time.Second)
+										fmt.Println("Respawing")
+										time.Sleep(4 * time.Second)
+										continue
+									} else if b == 2 {
+										fmt.Println("Toad man killed you")
+										time.Sleep(2 * time.Second)
+										fmt.Println("Respawing")
+										time.Sleep(4 * time.Second)
+										continue
+									} else {
+										fmt.Println("You rolled under the lightning bolt")
+									}
+									time.Sleep(2 * time.Second)	
+									fmt.Println("EVIL SHALL RULE ALL!")
+									time.Sleep(2 * time.Second)	
+									fmt.Println("Toad Man Slashes Through middle!")
+									fmt.Println("1.Parry")
+									fmt.Println("2.Duck")
+									fmt.Println("3.Block left")
+									fmt.Scanln(&b)
+									time.Sleep(2 * time.Second)	
+									if b == 1 {
+										fmt.Println("You dodged his attack")
+									} else if b == 2 {
+										fmt.Println("Toad man killed you")
+										time.Sleep(2 * time.Second)
+										fmt.Println("Respawing")
+										time.Sleep(4 * time.Second)
+										continue
+									} else {
+										fmt.Println("Toad man killed you")
+										time.Sleep(2 * time.Second)
+										fmt.Println("Respawing")
+										time.Sleep(4 * time.Second)
+										continue				
+									}
+									time.Sleep(2 * time.Second)	
+									fmt.Println("Toad man uses and ariel attack. DIE!")
+									fmt.Println("1.Uppercut")
+									fmt.Println("2.Dive")
+									fmt.Println("3.Parry")
+									fmt.Scanln(&b)
+									time.Sleep(2 * time.Second)	
+									if b == 1 {
+										fmt.Println("You punch Toad man in the face.")
+									} else if b == 2 {
+										fmt.Println("Toad man killed you")
+										time.Sleep(2 * time.Second)
+										fmt.Println("Respawing")
+										time.Sleep(4 * time.Second)
+										continue
+									} else {
+										fmt.Println("Toad man killed you")
+										time.Sleep(2 * time.Second)
+										fmt.Println("Respawing")
+										time.Sleep(4 * time.Second)
+										continue
+									}
+									break
 							}
 							time.Sleep(2 * time.Second)
 							fmt.Println("he is quite hurt from all your counters, and he takes one last stand.")
@@ -6779,6 +6805,10 @@ func main() {
 											time.Sleep(1 * time.Second)
 											fmt.Println("Enemy took",petat,"damage")
 										}
+										if hp2 <= 0 {
+											fmt.Println("You Win")
+											break
+										}	
 									}
 									time.Sleep(1 * time.Second)
 									fmt.Println("enemy is attacking")
