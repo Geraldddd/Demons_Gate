@@ -7303,7 +7303,7 @@ func main() {
 							attacken3 = 30
 							hp2 = 100
 							hp2or = hp2
-							hp1 = 100
+							hp1 = hp1or
 							fmt.Println("You enter a battle with Ancient Log")
 							for battle1 := 1 ;; battle1++ {
 								if battle1 % 10 == 0 {
