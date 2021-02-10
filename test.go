@@ -13,7 +13,8 @@ func main() {
 		fmt.Println("2.Playground")
 		fmt.Println("3.PvP")
 		fmt.Println("4.Survival")
-		fmt.Println("5.Instructions")
+		fmt.Println("5.Campaign 2")
+		fmt.Println("6.Instructions")
 		fmt.Scanln(&game)
 		fmt.Println("Starting")
 		time.Sleep(5 * time.Second)
@@ -14018,8 +14019,8 @@ func main() {
 					var p2attack1 = 10
 					var p2attack2 = 30
 					var p2attack3 = 20
-					var p1mon = 200
-					var p2mon = 200
+					var p1mon = 300
+					var p2mon = 300
 					fmt.Println("Player 1 is buying supplies")
 					time.Sleep(2 * time.Second)
 					for {
@@ -14327,7 +14328,7 @@ func main() {
 					var attack3 = 20
 					var attack4 = 50
 					var b int
-					var mon = 300
+					var mon = 500
 					var hp1 = 100
 					var	hp1or = hp1
 					var hp2 = 70
@@ -14630,6 +14631,129 @@ func main() {
 						time.Sleep(3 * time.Second)	
 						break
 					}
+				}
+			} else if game == 5{
+				for space := 1 ; space <=100 ; space++{
+					fmt.Println()
+				}
+				fmt.Println("We're no strangers to love")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("You know the rules and so do I")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("A full commitment's what I'm thinking of")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("You wouldn't get this from any other guy")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("I just wanna tell you how I'm feeling")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("Gotta make you understand")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("Never gonna give you up")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("Never gonna let you down")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("Never gonna run around and desert you")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("Never gonna make you cry")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("Never gonna say goodbye")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("Never gonna tell a lie and hurt you")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("We've known each other for so long")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("Your heart's been aching but you're too shy to say it")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("Inside we both know what's been going on")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("We know the game and we're gonna play it")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("And if you ask me how I'm feeling")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("Don't tell me you're too blind to see")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("Never gonna give you up")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("Never gonna let you down")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("Never gonna run around and desert you")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("Never gonna make you cry")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("Never gonna say goodbye")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("Never gonna tell a lie and hurt you")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("No, I'm never gonna give you up")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("No, I'm never gonna let you down")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("No, I'll never run around and hurt you")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("Never, ever desert you")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("We've known each other for so long")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("Your heart's been aching but")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("Never gonna give you up")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("Never gonna let you down")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("Never gonna run around and desert you")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("Never gonna make you cry")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("Never gonna say goodbye")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("Never gonna tell a lie and hurt you")
+				time.Sleep(2 * time.Second)		
+				fmt.Println("No, I'm never gonna give you up")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("No, I'm never gonna let you down")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("No, I'll never run around and hurt you")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("I'll never, ever desert you")
+				time.Sleep(2 * time.Second)	
+				fmt.Println("…………………………………………. ………………………………….,-~~”””’~~–,,_")
+				fmt.Println("………………………………………….. …………………………….,-~”-,:::::::::::::::::::”-,")
+				fmt.Println("………………………………………….. ………………………..,~”::::::::’,::::::: :::::::::::::|’,")
+				fmt.Println("………………………………………….. ………………………..|::::::,-~”’___””~~–~”’:}")
+				fmt.Println("………………………………………….. ………………………..’|:::::|: : : : : : : : : : : : : :")
+				fmt.Println("………………………………………….. ………………………..|:::::|: : :-~~—: : : —–: |")
+				fmt.Println("………………………………………….. ……………………….(_”~-’: : : : : : : : :")
+				fmt.Println("………………………………………….. ………………………..”’~-,|: : : : : : ~—’: : : :,’")
+				fmt.Println("………………………………………….. ……………………………|,: : : : : :-~~–: : ::/")
+				fmt.Println("………………………………………….. ……………………….,-” ::’~,,_: : : : : _,-’")
+				fmt.Println("………………………………………….. ………………….__,-’;;;;;  ”-,: : : :’~—~”/|")
+				fmt.Println("………………………………………….. ………….__,-~”;;;;;;/;;;;;;;  :  : :____/: :’,__")
+				fmt.Println("………………………………………….. .,-~~~””_;;;;;;;;;;;;;;;;;;;;;;;;;’,. .”-,:|:::::::|. . |;;;;”-,__")
+				fmt.Println("…………………………………………../;;;;;;;;;;;;;;;;;;;;;;;;;;;;,;;;;;;;;;  . .”|::::::::|. .,’;;;;;;;;;;”-,")
+				fmt.Println("…………………………………………,’ ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;|;;;;;;;;;;;  . . ::::,’. ./|;;;;;;;;;;;;;|")
+				fmt.Println("………………………………………,-”;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ;;;;;;;;;;’,: : __|. . .|;;;;;;;;;,’;;|")
+				fmt.Println("…………………………………….,-”;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;’,;;;;;;; ;;;;   . |:::|. . .”,;;;;;;;;|;;/")
+				fmt.Println("……………………………………/;;;;;;;;;;;;;;;;;;;;;;;;;;|;;;;;;;;;;;;;; ;;;;;;; ;;;  .|:::|. . . |;;;;;;;;|/")
+				fmt.Println("…………………………………./;;,-’;;;;;;;;;;;;;;;;;;;;;;,’;;;;;;;;;;;;;;;;;,;;;;;;; ;;;|. . /. . . .|;;;;;;;;|")
+				fmt.Println("…………………………………/;;;;;;;;;;;;;;;;;;;;;;;;;;,;;;;;;;;;;;;;;;;;;;;;;; ;;;;;;;”,: |;|. . . .  ;;;;;;|")
+				fmt.Println("………………………………,~”;;;;;;;;;; ;;;;;;;;;;;,-”;;;;;;;;;;;;;;;;;;;;;;;;;; ;;;;;;;|.|;|. . . . .|;;;;;;;|")
+				fmt.Println("…………………………..,~”;;;;;;;;;;;;;; ;;;;;;;;,-’;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;’,;;;;;;| |:|. . . . |;;;;;;|")
+				fmt.Println("………………………….,’;;;;;;;;;;;;;;;;; ;;;;;;;/;;;,-’;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;,;;;;;| |:|. . . .’|;;’,;;;;;|")
+				fmt.Println("…………………………|;,-’;;;;;;;;;;;;;;;;;;;,-’;;;,-’;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;,;;;;| |:|. . .,’;;;;;’,;;;;|_")
+				fmt.Println("…………………………/;;;;;;;;;;;;;;;;;,-’_;;;;;;,’;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;|;;; ;|.|:|. . .|;;;;;;;|;;;;|””~-,")
+				fmt.Println("………………………./;;;;;;;;;;;;;;;;;;/_”,;;;,’;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ,;;| |:|. . ./;;;;;;;;|;;;|;;;;;;|-,,__")
+				fmt.Println("……………………../;;;;;;;;;;;;;;;;;,-’…|;;,;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ;;;;;| |:|._,-’;;;;;;;;;|;;;;|;;;;;;;;;;;”’-,_")
+				fmt.Println("……………………/;;;;;;;;;;;;;;;;,-’….,’;;,;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ;;;;;;;;|.|:|::::”’~–~”’||;;;;;|;;;;;;;;;;,-~””~–,")
+				fmt.Println("………………….,’;;;;;;;;;;;;;;;;,’……/;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ;;|.|:|::::::::::::::|;;;;;’,;;;;;;;;;”-,: : : : : :”’~-,:”’~~–,")
+				fmt.Println("…………………/;;;;;;;;;;;;;;;,-’……,’;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ;;;;;;;;;;;;|:|:|::::::::::::::’,;;;;;;|_””~–,,-~—,,___,-~~”’__”~-")
+				fmt.Println("………………,-’;;;;;;;;;;;;;;;,’……../;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ;;;;|:|:|:::::::::::::::|;;;;;;|……………… …”-, ”-,”-,”~")
+				fmt.Println("………………/;;;;;;;;;;;;;;;;/…….,-’;;;;;;;;;;;;;;;;;Scroll Up;;;;;;;;;;;;;;;;;; ;;;;;;;|:|:|:::::::::::::::|;;;;;|…………….")
+				for space := 1 ; space <=20 ; space++{
+					fmt.Println()
+				}
+				time.Sleep(2 * time.Second)	
+				for space := 1 ; space <=100 ; space++{
+					fmt.Println()
 				}
 			} else {
 				var c int
