@@ -523,7 +523,7 @@ func main() {
 						montr = 0
 						break
 			}
-			time.Sleep(1 * time.Second)
+				time.Sleep(1 * time.Second)
 				fmt.Println("You gained 20 coins")
 				time.Sleep(1 * time.Second)
 				mon = mon + 20
@@ -14633,30 +14633,38 @@ func main() {
 					}
 				}
 			} else if game == 5{
-				var a int
-				//var check = 1
-			//	var b int
-			//	var key = 1
-			//	var key2 = 1
-			//	var key3 = 1
-			//	var mon int
-			//	var hp1 = 100
-			//	var hp2 = 75
-			//	var hp2or = hp2
-			//	var hp1or = hp1
-			//	var attack1 = 10
-			//	var attack3 = 20
-			//	var attack4 = 50
-			//	var hp1tr int
-			//	var attack1tr int
-			//	var attack2tr int
-			//	var attack3tr int
-			//	var attack4tr int
-			//	var attacken1 = 10
-			//	var attacken2 = 20 
-			//	var attacken3 = 10
-			//	var montr int
-			//	var check4 int
+					var petat = 20
+					var pethe = 20
+					var poip = 1
+					var cursep = 1
+					var hpst = 1
+					var rpoip = 0
+					var rcursep = 0
+					var a int
+				  	//var check = 1
+					var b int
+					//var key = 1
+					//var key2 = 1
+					//var key3 = 1
+					var mon int
+					var hp1 = 100
+					var hp2 = 69
+					var hp2or = hp2
+					var hp1or = hp1
+					var attack1 = 10
+					var attack2 = 30
+					var attack3 = 20
+					var attack4 = 50
+					//var hp1tr int
+					//var attack1tr int
+					//var attack2tr int
+					//var attack3tr int
+					//var attack4tr int
+					var attacken1 = 10
+					var attacken2 = 20 
+					var attacken3 = 10
+					//var montr int
+					//var check4 int
 				fmt.Println("After defeating the lord of hell Toad Man, you were told that your memories would return.")
 				time.Sleep(5 * time.Second)
 				fmt.Println("The problem is you still do not have any memories before Mystic Woods.")
@@ -14695,8 +14703,6 @@ func main() {
 				}
 				time.Sleep(4 * time.Second)
 				if a == 1 {
-
-				} else {
 					fmt.Println("You return to the place that began your journey, the place you fought monsters, and the time you freed the woods.")
 					time.Sleep(4 * time.Second)
 					fmt.Println("It's been 2 years since that things have changed now, the underworld now controls the land and you have to free it again.")
@@ -14704,6 +14710,1355 @@ func main() {
 					fmt.Println("You continue forwards but find yourself upon enemy territory.")
 					time.Sleep(4 * time.Second)
 					fmt.Println("A cursed wood dweller stands upon you, with your rusty sword held in front of you, and starts the battle.")
+					time.Sleep(4 * time.Second)
+					hp1 = hp1or
+					for battle1 := 1 ;; battle1++ {
+						if battle1 % 10 == 0 {
+							fmt.Println("ultimate attack is ready")
+							time.Sleep(1 * time.Second)
+							fmt.Println("would you like to use ultimate attack")
+							fmt.Println("1.Yes")
+							fmt.Println("2.no")
+							fmt.Scanln(&b)
+							if b == 1 {
+								time.Sleep(1 * time.Second)
+								fmt.Println("using ultimate attack")
+								time.Sleep(5 * time.Second)
+								var s = time.Now().UnixNano()
+								rand.Seed(s)
+								var random = rand.Intn(8)
+								if random == 3 {
+									hp2 = hp2 - attack4 * 3 / 2
+									fmt.Println("Critical Hit")
+									time.Sleep(1 * time.Second)
+									fmt.Println("Enemy took",attack4 + (attack4 / 2),"damage")
+									if hp2 <= 0 {
+										fmt.Println("You Win")
+										break
+									}	
+								}else {
+									hp2 = hp2 - attack4
+									fmt.Println("Enemy took",attack4,"damage")
+									if hp2 <= 0 {
+										fmt.Println("You Win")
+										break
+									}
+								}
+							} else if b == 2 {
+								time.Sleep(1 * time.Second)
+								continue
+							} else {
+								time.Sleep(1 * time.Second)
+								fmt.Println("sorry that is an invalid command")
+								time.Sleep(1 * time.Second)
+								continue
+							}
+						}
+						fmt.Println("your hp",hp1,"          enemy hp",hp2)
+						fmt.Println()
+						fmt.Println("choose your attack")
+						fmt.Println("1.light attack ",attack1,"damage 100% accuracy")
+						fmt.Println("2.heavy attack ",attack2,"damage 75% accuracy")
+						fmt.Println("3.heal",attack3,"health 100% accuracy")
+						fmt.Println("4.dark magic 100% accuracy")
+						fmt.Scanln(&a)
+						if a == 1 {
+							var s = time.Now().UnixNano()
+							rand.Seed(s)
+							var random = rand.Intn(8)
+							if random == 0 {
+								hp2 = hp2 - attack1 * 3 / 2
+								fmt.Println("Critical Hit")
+								time.Sleep(1 * time.Second)
+								fmt.Println("Enemy took",attack1 + (attack1 / 2),"damage")
+								time.Sleep(1 * time.Second)
+								if hp2 <= 0 {
+									fmt.Println("You Win")
+									break
+								}	
+							}else {
+								time.Sleep(1 * time.Second)
+								fmt.Println("Enemy took",attack1,"damage")
+								hp2 = hp2 - attack1
+								time.Sleep(1 * time.Second)
+								if hp2 <= 0 {
+									fmt.Println("You Win")
+									break
+								}
+							}
+						} else if a == 2 {
+							var s = time.Now().UnixNano()
+							rand.Seed(s)
+							var random = rand.Intn(3)
+							if random == 1 || random == 2 || random == 3 {
+								var s = time.Now().UnixNano()
+								rand.Seed(s)
+								var random = rand.Intn(8)
+								if random == 3 {
+									hp2 = hp2 - attack2 * 3 / 2
+									fmt.Println("Critical Hit")
+									time.Sleep(1 * time.Second)
+									fmt.Println("Enemy took",attack2 + (attack2 / 2),"damage")
+									time.Sleep(1 * time.Second)
+									if hp2 <= 0 {
+										fmt.Println("You Win")
+										break
+									}	
+								}else {
+								time.Sleep(1 * time.Second)
+								hp2 = hp2 - attack2
+								fmt.Println("Enemy took",attack2,"damage")
+								time.Sleep(1 * time.Second)
+								if hp2 <= 0 {
+									fmt.Println("You Win")
+									break
+								}
+								}
+							} else {
+								time.Sleep(1 * time.Second)
+								fmt.Println("attack missed")
+								time.Sleep(1 * time.Second)
+							}
+						} else if a == 3 {
+							if hp1 == hp1or {
+								time.Sleep(1 * time.Second)
+								fmt.Println("You're not low enough to heal")
+								time.Sleep(1 * time.Second)
+							} else if hp1 >= (hp1or - attack3){
+								time.Sleep(1 * time.Second)
+								hp1 = hp1or
+								fmt.Println("You have been healed to max")
+								time.Sleep(1 * time.Second)
+							} else {
+								time.Sleep(1 * time.Second)
+								hp1 = hp1 + attack3
+								fmt.Println("You have been healed",attack3,"health")
+								time.Sleep(1 * time.Second)
+							}
+						} else if a == 4 {
+							time.Sleep(1 * time.Second)
+							fmt.Println("Which potion would you like to use")
+							fmt.Println("1.Poison:",poip)
+							fmt.Println("2.Curse",cursep)
+							fmt.Println("3.Life Steal",hpst)
+							fmt.Scanln(&b)
+							time.Sleep(1 * time.Second)
+							if b == 1 {
+								if poip == 0 {
+									time.Sleep(1 * time.Second)
+									fmt.Println("Sorry you don't have this item")
+									time.Sleep(1 * time.Second)
+									continue
+								} else {
+									poip--
+									time.Sleep(1 * time.Second)
+									rpoip = 5
+								}
+							} else if b == 2 {
+								if cursep == 0 {
+									time.Sleep(1 * time.Second)
+									fmt.Println("Sorry you don't have this item")
+									time.Sleep(1 * time.Second)
+									continue
+								} else {
+									cursep--
+									time.Sleep(1 * time.Second)
+									rcursep = 10
+								}
+							} else if b == 3 {
+								if hpst == 0 {
+									time.Sleep(1 * time.Second)
+									fmt.Println("Sorry you don't have this item")
+									time.Sleep(1 * time.Second)
+									continue
+								} else {
+									hpst--
+									if hp1 == hp1or {
+										hp2 = hp2 - 30
+										time.Sleep(1 * time.Second)
+										fmt.Println("You're not low enough to heal")
+										time.Sleep(1 * time.Second)
+										fmt.Println("Enemy took 30 damage")
+									} else if hp1 >= (hp1or - 30){
+										time.Sleep(1 * time.Second)
+										hp1 = hp1or
+										hp2 = hp2 - 30
+										fmt.Println("You have been healed to max")
+										time.Sleep(1 * time.Second)
+										fmt.Println("Enemy took 30 damage")
+										if hp2 <= 0 {
+											fmt.Println("You Win")
+											break
+										}
+									} else {
+										time.Sleep(1 * time.Second)
+										hp1 = hp1 + 30
+										hp2 = hp2 - 30
+										fmt.Println("You stole 30 hp")
+										if hp2 <= 0 {
+											fmt.Println("You Win")
+											break
+										}
+									}
+								}
+							}
+						} else {
+							fmt.Println("Sorry that is an invalid command")
+						}
+						var s = time.Now().UnixNano()
+						rand.Seed(s)
+						var random = rand.Intn(5)
+						if random == 3 {
+							if hp1 == hp1or / 2 {
+								hp1 = hp1 + pethe
+								time.Sleep(1 * time.Second)
+								fmt.Println("You have been healed",pethe,"hp")
+							} else {
+								hp2 = hp2 - petat
+								time.Sleep(1 * time.Second)
+								fmt.Println("Enemy took",petat,"damage")
+							}
+							if hp2 <= 0 {
+								fmt.Println("You Win")
+								break
+							}	
+						}
+						time.Sleep(1 * time.Second)
+						fmt.Println("enemy is attacking")
+						time.Sleep(1 * time.Second)
+						if hp2 <= (hp2or / 3) && hp1 > attacken2 {
+							time.Sleep(1 * time.Second)
+							hp2 = hp2 + attacken3
+							fmt.Println("enemy has been healed",attacken3,"health")
+							time.Sleep(1 * time.Second)
+							continue
+						}
+						if hp1 <= attacken1 || hp1 <= attacken1 * 2 && hp2 > hp1 {
+							var s = time.Now().UnixNano()
+							rand.Seed(s)
+							var random = rand.Intn(8)
+							if random == 0 {
+								hp1 = hp1 - attacken1 * 3 / 2
+								fmt.Println("Critical Hit")
+								time.Sleep(1 * time.Second)
+								fmt.Println("you took",attacken1 + (attacken1 / 2),"damage")
+								time.Sleep(1 * time.Second)
+								if hp1 <= 0 {
+									fmt.Println("You Died")
+									//check = 2
+									break
+								}	
+							}else {
+								fmt.Println("you took",attacken1,"damage")
+								hp1 = hp1-attacken1
+								time.Sleep(1 * time.Second)
+								if hp1 <= 0 {
+									fmt.Println("You Died")
+									//check = 2
+									break
+								}
+							}
+						} else {
+							var b = time.Now().UnixNano()
+							rand.Seed(b)
+							var random3 = rand.Intn(5)
+								if random3 == 1 || random3 == 2 || random3 == 3 {
+									var s = time.Now().UnixNano()
+									rand.Seed(s)
+									var random = rand.Intn(8)
+									if random == 0 {
+										hp1 = hp1 - attacken2 * 3 / 2
+										fmt.Println("Critical Hit")
+										time.Sleep(1 * time.Second)
+										fmt.Println("you took",attacken2 + (attacken2 / 2),"damage")
+										time.Sleep(1 * time.Second)
+										if hp1 <= 0 {
+											fmt.Println("You Died")
+											//check = 2
+											break
+										}	
+									}else {
+										fmt.Println("you took",attacken2,"damage")
+										hp1 = hp1-attacken2
+										time.Sleep(1 * time.Second)	
+										if hp1 <= 0 {
+											fmt.Println("You Died")
+											//check = 2
+											break
+										}
+									}
+								} else {
+									fmt.Println("attack missed")
+										time.Sleep(1 * time.Second)	
+										continue
+								}
+							}
+							if rpoip != 0 {
+								hp2 = hp2 - 10
+								rpoip--
+								time.Sleep(1 * time.Second)
+								fmt.Println("Enemy poisoned 10 damage")
+								time.Sleep(1 * time.Second)
+								if hp2 <= 0 {
+									fmt.Println("You Win")
+									break
+								}	
+							}
+							if rcursep != 0 {
+								if rcursep == 1 {
+									hp2 = hp2 - 150
+									time.Sleep(1 * time.Second)
+									fmt.Println("Enemy took 150 damage.")
+									time.Sleep(1 * time.Second)
+									rcursep = 0
+									if hp2 <= 0 {
+										fmt.Println("You Win")
+										break
+									}	
+								}
+								rcursep--
+								time.Sleep(1 * time.Second)
+								fmt.Println(rcursep,"turns left")
+								time.Sleep(1 * time.Second)
+							}
+						}
+						hp1or = hp1or + 20
+						hp1 = hp1or
+						time.Sleep(1 * time.Second)
+						fmt.Println("You gained 100 coins")
+						time.Sleep(1 * time.Second)
+						mon = mon + 100
+						fmt.Println("Total coins:",mon)
+						time.Sleep(4 * time.Second)
+						fmt.Println("After easily defeating the Wood Dweller you grab his helmet and continue forwards.")
+						time.Sleep(4 * time.Second)
+						fmt.Println("Armor upraded")
+						time.Sleep(4 * time.Second)
+						fmt.Println("You know what your goal is, You will have to find the demon in control and defeat him.")
+						time.Sleep(4 * time.Second)
+						fmt.Println("While you trudge through the bushes you find two routes to choose from.")
+						time.Sleep(4 * time.Second)
+						fmt.Println("Either you can climb down a cliff or follow a creek.")
+						time.Sleep(2 * time.Second) 
+						fmt.Println("1.Creek")
+						fmt.Println("2.Cliff")
+						fmt.Scanln(&b)
+						time.Sleep(2 * time.Second) 
+						if b == 1 {
+							fmt.Println("You follow the water down to a small pond, but a small Sea Monster ambushes you. Small Sea monster")
+							time.Sleep(2 * time.Second) 
+							rpoip = 0
+							rcursep = 0
+							hp2 = 100
+							hp2or = hp2
+							attacken1 = 10
+							attacken2 = 30
+							attacken3 = 20
+							for battle1 := 1 ;; battle1++ {
+								if battle1 % 10 == 0 {
+									fmt.Println("ultimate attack is ready")
+									time.Sleep(1 * time.Second)
+									fmt.Println("would you like to use ultimate attack")
+									fmt.Println("1.Yes")
+									fmt.Println("2.no")
+									fmt.Scanln(&b)
+									if b == 1 {
+										time.Sleep(1 * time.Second)
+										fmt.Println("using ultimate attack")
+										time.Sleep(5 * time.Second)
+										var s = time.Now().UnixNano()
+										rand.Seed(s)
+										var random = rand.Intn(8)
+										if random == 3 {
+											hp2 = hp2 - attack4 * 3 / 2
+											fmt.Println("Critical Hit")
+											time.Sleep(1 * time.Second)
+											fmt.Println("Enemy took",attack4 + (attack4 / 2),"damage")
+											if hp2 <= 0 {
+												fmt.Println("You Win")
+												break
+											}	
+										}else {
+											hp2 = hp2 - attack4
+											fmt.Println("Enemy took",attack4,"damage")
+											if hp2 <= 0 {
+												fmt.Println("You Win")
+												break
+											}
+										}
+									} else if b == 2 {
+										time.Sleep(1 * time.Second)
+										continue
+									} else {
+										time.Sleep(1 * time.Second)
+										fmt.Println("sorry that is an invalid command")
+										time.Sleep(1 * time.Second)
+										continue
+									}
+								}
+								fmt.Println("your hp",hp1,"          enemy hp",hp2)
+								fmt.Println()
+								fmt.Println("choose your attack")
+								fmt.Println("1.light attack ",attack1,"damage 100% accuracy")
+								fmt.Println("2.heavy attack ",attack2,"damage 75% accuracy")
+								fmt.Println("3.heal",attack3,"health 100% accuracy")
+								fmt.Println("4.dark magic 100% accuracy")
+								fmt.Scanln(&a)
+								if a == 1 {
+									var s = time.Now().UnixNano()
+									rand.Seed(s)
+									var random = rand.Intn(8)
+									if random == 0 {
+										hp2 = hp2 - attack1 * 3 / 2
+										fmt.Println("Critical Hit")
+										time.Sleep(1 * time.Second)
+										fmt.Println("Enemy took",attack1 + (attack1 / 2),"damage")
+										time.Sleep(1 * time.Second)
+										if hp2 <= 0 {
+											fmt.Println("You Win")
+											break
+										}	
+									} else {
+										time.Sleep(1 * time.Second)
+										fmt.Println("Enemy took",attack1,"damage")
+										hp2 = hp2 - attack1
+										time.Sleep(1 * time.Second)
+										if hp2 <= 0 {
+											fmt.Println("You Win")
+											break
+										}
+									}
+								} else if a == 2 {
+									var s = time.Now().UnixNano()
+									rand.Seed(s)
+									var random = rand.Intn(3)
+									if random == 1 || random == 2 || random == 3 {
+										var s = time.Now().UnixNano()
+										rand.Seed(s)
+										var random = rand.Intn(8)
+										if random == 3 {
+											hp2 = hp2 - attack2 * 3 / 2
+											fmt.Println("Critical Hit")
+											time.Sleep(1 * time.Second)
+											fmt.Println("Enemy took",attack2 + (attack2 / 2),"damage")
+											time.Sleep(1 * time.Second)
+											if hp2 <= 0 {
+												fmt.Println("You Win")
+												break
+											}	
+										}else {
+										time.Sleep(1 * time.Second)
+										hp2 = hp2 - attack2
+										fmt.Println("Enemy took",attack2,"damage")
+										time.Sleep(1 * time.Second)
+										if hp2 <= 0 {
+											fmt.Println("You Win")
+											break
+										}
+										}
+									} else {
+										time.Sleep(1 * time.Second)
+										fmt.Println("attack missed")
+										time.Sleep(1 * time.Second)
+									}
+								} else if a == 3 {
+									if hp1 == hp1or {
+										time.Sleep(1 * time.Second)
+										fmt.Println("You're not low enough to heal")
+										time.Sleep(1 * time.Second)
+									} else if hp1 >= (hp1or - attack3){
+										time.Sleep(1 * time.Second)
+										hp1 = hp1or
+										fmt.Println("You have been healed to max")
+										time.Sleep(1 * time.Second)
+									} else {
+										time.Sleep(1 * time.Second)
+										hp1 = hp1 + attack3
+										fmt.Println("You have been healed",attack3,"health")
+										time.Sleep(1 * time.Second)
+									}
+								} else if a == 4 {
+									time.Sleep(1 * time.Second)
+									fmt.Println("Which potion would you like to use")
+									fmt.Println("1.Poison:",poip)
+									fmt.Println("2.Curse",cursep)
+									fmt.Println("3.Life Steal",hpst)
+									fmt.Scanln(&b)
+									time.Sleep(1 * time.Second)
+									if b == 1 {
+										if poip == 0 {
+											time.Sleep(1 * time.Second)
+											fmt.Println("Sorry you don't have this item")
+											time.Sleep(1 * time.Second)
+											continue
+										} else {
+											poip--
+											time.Sleep(1 * time.Second)
+											rpoip = 5
+										}
+									} else if b == 2 {
+										if cursep == 0 {
+											time.Sleep(1 * time.Second)
+											fmt.Println("Sorry you don't have this item")
+											time.Sleep(1 * time.Second)
+											continue
+										} else {
+											cursep--
+											time.Sleep(1 * time.Second)
+											rcursep = 10
+										}
+									} else if b == 3 {
+										if hpst == 0 {
+											time.Sleep(1 * time.Second)
+											fmt.Println("Sorry you don't have this item")
+											time.Sleep(1 * time.Second)
+											continue
+										} else {
+											hpst--
+											if hp1 == hp1or {
+												hp2 = hp2 - 30
+												time.Sleep(1 * time.Second)
+												fmt.Println("You're not low enough to heal")
+												time.Sleep(1 * time.Second)
+												fmt.Println("Enemy took 30 damage")
+											} else if hp1 >= (hp1or - 30){
+												time.Sleep(1 * time.Second)
+												hp1 = hp1or
+												hp2 = hp2 - 30
+												fmt.Println("You have been healed to max")
+												time.Sleep(1 * time.Second)
+												fmt.Println("Enemy took 30 damage")
+												if hp2 <= 0 {
+													fmt.Println("You Win")
+													break
+												}
+											} else {
+												time.Sleep(1 * time.Second)
+												hp1 = hp1 + 30
+												hp2 = hp2 - 30
+												fmt.Println("You stole 30 hp")
+												if hp2 <= 0 {
+													fmt.Println("You Win")
+													break
+												}
+											}
+										}
+									}
+								} else {
+									fmt.Println("Sorry that is an invalid command")
+								}
+								var s = time.Now().UnixNano()
+								rand.Seed(s)
+								var random = rand.Intn(5)
+								if random == 3 {
+									if hp1 == hp1or / 2 {
+										hp1 = hp1 + pethe
+										time.Sleep(1 * time.Second)
+										fmt.Println("You have been healed",pethe,"hp")
+									} else {
+										hp2 = hp2 - petat
+										time.Sleep(1 * time.Second)
+										fmt.Println("Enemy took",petat,"damage")
+									}
+									if hp2 <= 0 {
+										fmt.Println("You Win")
+										break
+									}	
+								}
+								time.Sleep(1 * time.Second)
+								fmt.Println("enemy is attacking")
+								time.Sleep(1 * time.Second)
+								if hp2 <= (hp2or / 3) && hp1 > attacken2 {
+									time.Sleep(1 * time.Second)
+									hp2 = hp2 + attacken3
+									fmt.Println("enemy has been healed",attacken3,"health")
+									time.Sleep(1 * time.Second)
+									continue
+								}
+								if hp1 <= attacken1 || hp1 <= attacken1 * 2 && hp2 > hp1 {
+									var s = time.Now().UnixNano()
+									rand.Seed(s)
+									var random = rand.Intn(8)
+									if random == 0 {
+										hp1 = hp1 - attacken1 * 3 / 2
+										fmt.Println("Critical Hit")
+										time.Sleep(1 * time.Second)
+										fmt.Println("you took",attacken1 + (attacken1 / 2),"damage")
+										time.Sleep(1 * time.Second)
+										if hp1 <= 0 {
+											fmt.Println("You Died")
+											//check = 2
+											break
+										}	
+									}else {
+										fmt.Println("you took",attacken1,"damage")
+										hp1 = hp1-attacken1
+										time.Sleep(1 * time.Second)
+										if hp1 <= 0 {
+											fmt.Println("You Died")
+											//check = 2
+											break
+										}
+									}
+								} else {
+									var b = time.Now().UnixNano()
+									rand.Seed(b)
+									var random3 = rand.Intn(5)
+										if random3 == 1 || random3 == 2 || random3 == 3 {
+											var s = time.Now().UnixNano()
+											rand.Seed(s)
+											var random = rand.Intn(8)
+											if random == 0 {
+												hp1 = hp1 - attacken2 * 3 / 2
+												fmt.Println("Critical Hit")
+												time.Sleep(1 * time.Second)
+												fmt.Println("you took",attacken2 + (attacken2 / 2),"damage")
+												time.Sleep(1 * time.Second)
+												if hp1 <= 0 {
+													fmt.Println("You Died")
+													//check = 2
+													break
+												}	
+											}else {
+												fmt.Println("you took",attacken2,"damage")
+												hp1 = hp1-attacken2
+												time.Sleep(1 * time.Second)	
+												if hp1 <= 0 {
+													fmt.Println("You Died")
+													//check = 2
+													break
+												}
+											}
+										} else {
+											fmt.Println("attack missed")
+												time.Sleep(1 * time.Second)	
+												continue
+										}
+									}
+									if rpoip != 0 {
+										hp2 = hp2 - 10
+										rpoip--
+										time.Sleep(1 * time.Second)
+										fmt.Println("Enemy poisoned 10 damage")
+										time.Sleep(1 * time.Second)
+										if hp2 <= 0 {
+											fmt.Println("You Win")
+											break
+										}	
+									}
+									if rcursep != 0 {
+										if rcursep == 1 {
+											hp2 = hp2 - 150
+											time.Sleep(1 * time.Second)
+											fmt.Println("Enemy took 150 damage.")
+											time.Sleep(1 * time.Second)
+											rcursep = 0
+											if hp2 <= 0 {
+												fmt.Println("You Win")
+												break
+											}	
+										}
+										rcursep--
+										time.Sleep(1 * time.Second)
+										fmt.Println(rcursep,"turns left")
+										time.Sleep(1 * time.Second)
+									}
+								}
+								hp1 = hp1or
+								time.Sleep(1 * time.Second)
+								fmt.Println("You gained 50 coins")
+								time.Sleep(1 * time.Second)
+								mon = mon + 50
+								fmt.Println("Total coins:",mon)
+								time.Sleep(4 * time.Second)
+								fmt.Println("The monster falls and you gain a sea orb, you can either use it for a weapon upgrade or magic, which do you choose?")
+								time.Sleep(2 * time.Second)
+								fmt.Println("1.Weapon")
+								fmt.Println("2.Magic")
+								fmt.Scanln(&b)
+								time.Sleep(2 * time.Second)
+								if b == 1 {
+									attack1 = attack1 + 20
+									attack2 = attack2 + 20
+									attack4 = attack4 + 20
+									fmt.Println("Weapon upgraded")
+								} else {
+									attack3 = attack3 + 10
+									fmt.Println("Magic upgraded")
+								}
+								time.Sleep(2 * time.Second)
+						} else {
+							fmt.Println("You scale the edge of the cliff and find yourself upon a cave spider")
+							rpoip = 0
+							rcursep = 0
+							hp2 = 100
+							hp2or = hp2
+							attacken1 = 10
+							attacken2 = 30
+							attacken3 = 20
+							for battle1 := 1 ;; battle1++ {
+								if battle1 % 10 == 0 {
+									fmt.Println("ultimate attack is ready")
+									time.Sleep(1 * time.Second)
+									fmt.Println("would you like to use ultimate attack")
+									fmt.Println("1.Yes")
+									fmt.Println("2.no")
+									fmt.Scanln(&b)
+									if b == 1 {
+										time.Sleep(1 * time.Second)
+										fmt.Println("using ultimate attack")
+										time.Sleep(5 * time.Second)
+										var s = time.Now().UnixNano()
+										rand.Seed(s)
+										var random = rand.Intn(8)
+										if random == 3 {
+											hp2 = hp2 - attack4 * 3 / 2
+											fmt.Println("Critical Hit")
+											time.Sleep(1 * time.Second)
+											fmt.Println("Enemy took",attack4 + (attack4 / 2),"damage")
+											if hp2 <= 0 {
+												fmt.Println("You Win")
+												break
+											}	
+										}else {
+											hp2 = hp2 - attack4
+											fmt.Println("Enemy took",attack4,"damage")
+											if hp2 <= 0 {
+												fmt.Println("You Win")
+												break
+											}
+										}
+									} else if b == 2 {
+										time.Sleep(1 * time.Second)
+										continue
+									} else {
+										time.Sleep(1 * time.Second)
+										fmt.Println("sorry that is an invalid command")
+										time.Sleep(1 * time.Second)
+										continue
+									}
+								}
+								fmt.Println("your hp",hp1,"          enemy hp",hp2)
+								fmt.Println()
+								fmt.Println("choose your attack")
+								fmt.Println("1.light attack ",attack1,"damage 100% accuracy")
+								fmt.Println("2.heavy attack ",attack2,"damage 75% accuracy")
+								fmt.Println("3.heal",attack3,"health 100% accuracy")
+								fmt.Println("4.dark magic 100% accuracy")
+								fmt.Scanln(&a)
+								if a == 1 {
+									var s = time.Now().UnixNano()
+									rand.Seed(s)
+									var random = rand.Intn(8)
+									if random == 0 {
+										hp2 = hp2 - attack1 * 3 / 2
+										fmt.Println("Critical Hit")
+										time.Sleep(1 * time.Second)
+										fmt.Println("Enemy took",attack1 + (attack1 / 2),"damage")
+										time.Sleep(1 * time.Second)
+										if hp2 <= 0 {
+											fmt.Println("You Win")
+											break
+										}	
+									} else {
+										time.Sleep(1 * time.Second)
+										fmt.Println("Enemy took",attack1,"damage")
+										hp2 = hp2 - attack1
+										time.Sleep(1 * time.Second)
+										if hp2 <= 0 {
+											fmt.Println("You Win")
+											break
+										}
+									}
+								} else if a == 2 {
+									var s = time.Now().UnixNano()
+									rand.Seed(s)
+									var random = rand.Intn(3)
+									if random == 1 || random == 2 || random == 3 {
+										var s = time.Now().UnixNano()
+										rand.Seed(s)
+										var random = rand.Intn(8)
+										if random == 3 {
+											hp2 = hp2 - attack2 * 3 / 2
+											fmt.Println("Critical Hit")
+											time.Sleep(1 * time.Second)
+											fmt.Println("Enemy took",attack2 + (attack2 / 2),"damage")
+											time.Sleep(1 * time.Second)
+											if hp2 <= 0 {
+												fmt.Println("You Win")
+												break
+											}	
+										}else {
+										time.Sleep(1 * time.Second)
+										hp2 = hp2 - attack2
+										fmt.Println("Enemy took",attack2,"damage")
+										time.Sleep(1 * time.Second)
+										if hp2 <= 0 {
+											fmt.Println("You Win")
+											break
+										}
+										}
+									} else {
+										time.Sleep(1 * time.Second)
+										fmt.Println("attack missed")
+										time.Sleep(1 * time.Second)
+									}
+								} else if a == 3 {
+									if hp1 == hp1or {
+										time.Sleep(1 * time.Second)
+										fmt.Println("You're not low enough to heal")
+										time.Sleep(1 * time.Second)
+									} else if hp1 >= (hp1or - attack3){
+										time.Sleep(1 * time.Second)
+										hp1 = hp1or
+										fmt.Println("You have been healed to max")
+										time.Sleep(1 * time.Second)
+									} else {
+										time.Sleep(1 * time.Second)
+										hp1 = hp1 + attack3
+										fmt.Println("You have been healed",attack3,"health")
+										time.Sleep(1 * time.Second)
+									}
+								} else if a == 4 {
+									time.Sleep(1 * time.Second)
+									fmt.Println("Which potion would you like to use")
+									fmt.Println("1.Poison:",poip)
+									fmt.Println("2.Curse",cursep)
+									fmt.Println("3.Life Steal",hpst)
+									fmt.Scanln(&b)
+									time.Sleep(1 * time.Second)
+									if b == 1 {
+										if poip == 0 {
+											time.Sleep(1 * time.Second)
+											fmt.Println("Sorry you don't have this item")
+											time.Sleep(1 * time.Second)
+											continue
+										} else {
+											poip--
+											time.Sleep(1 * time.Second)
+											rpoip = 5
+										}
+									} else if b == 2 {
+										if cursep == 0 {
+											time.Sleep(1 * time.Second)
+											fmt.Println("Sorry you don't have this item")
+											time.Sleep(1 * time.Second)
+											continue
+										} else {
+											cursep--
+											time.Sleep(1 * time.Second)
+											rcursep = 10
+										}
+									} else if b == 3 {
+										if hpst == 0 {
+											time.Sleep(1 * time.Second)
+											fmt.Println("Sorry you don't have this item")
+											time.Sleep(1 * time.Second)
+											continue
+										} else {
+											hpst--
+											if hp1 == hp1or {
+												hp2 = hp2 - 30
+												time.Sleep(1 * time.Second)
+												fmt.Println("You're not low enough to heal")
+												time.Sleep(1 * time.Second)
+												fmt.Println("Enemy took 30 damage")
+											} else if hp1 >= (hp1or - 30){
+												time.Sleep(1 * time.Second)
+												hp1 = hp1or
+												hp2 = hp2 - 30
+												fmt.Println("You have been healed to max")
+												time.Sleep(1 * time.Second)
+												fmt.Println("Enemy took 30 damage")
+												if hp2 <= 0 {
+													fmt.Println("You Win")
+													break
+												}
+											} else {
+												time.Sleep(1 * time.Second)
+												hp1 = hp1 + 30
+												hp2 = hp2 - 30
+												fmt.Println("You stole 30 hp")
+												if hp2 <= 0 {
+													fmt.Println("You Win")
+													break
+												}
+											}
+										}
+									}
+								} else {
+									fmt.Println("Sorry that is an invalid command")
+								}
+								var s = time.Now().UnixNano()
+								rand.Seed(s)
+								var random = rand.Intn(5)
+								if random == 3 {
+									if hp1 == hp1or / 2 {
+										hp1 = hp1 + pethe
+										time.Sleep(1 * time.Second)
+										fmt.Println("You have been healed",pethe,"hp")
+									} else {
+										hp2 = hp2 - petat
+										time.Sleep(1 * time.Second)
+										fmt.Println("Enemy took",petat,"damage")
+									}
+									if hp2 <= 0 {
+										fmt.Println("You Win")
+										break
+									}	
+								}
+								time.Sleep(1 * time.Second)
+								fmt.Println("enemy is attacking")
+								time.Sleep(1 * time.Second)
+								if hp2 <= (hp2or / 3) && hp1 > attacken2 {
+									time.Sleep(1 * time.Second)
+									hp2 = hp2 + attacken3
+									fmt.Println("enemy has been healed",attacken3,"health")
+									time.Sleep(1 * time.Second)
+									continue
+								}
+								if hp1 <= attacken1 || hp1 <= attacken1 * 2 && hp2 > hp1 {
+									var s = time.Now().UnixNano()
+									rand.Seed(s)
+									var random = rand.Intn(8)
+									if random == 0 {
+										hp1 = hp1 - attacken1 * 3 / 2
+										fmt.Println("Critical Hit")
+										time.Sleep(1 * time.Second)
+										fmt.Println("you took",attacken1 + (attacken1 / 2),"damage")
+										time.Sleep(1 * time.Second)
+										if hp1 <= 0 {
+											fmt.Println("You Died")
+											//check = 2
+											break
+										}	
+									}else {
+										fmt.Println("you took",attacken1,"damage")
+										hp1 = hp1-attacken1
+										time.Sleep(1 * time.Second)
+										if hp1 <= 0 {
+											fmt.Println("You Died")
+											//check = 2
+											break
+										}
+									}
+								} else {
+									var b = time.Now().UnixNano()
+									rand.Seed(b)
+									var random3 = rand.Intn(5)
+										if random3 == 1 || random3 == 2 || random3 == 3 {
+											var s = time.Now().UnixNano()
+											rand.Seed(s)
+											var random = rand.Intn(8)
+											if random == 0 {
+												hp1 = hp1 - attacken2 * 3 / 2
+												fmt.Println("Critical Hit")
+												time.Sleep(1 * time.Second)
+												fmt.Println("you took",attacken2 + (attacken2 / 2),"damage")
+												time.Sleep(1 * time.Second)
+												if hp1 <= 0 {
+													fmt.Println("You Died")
+													//check = 2
+													break
+												}	
+											}else {
+												fmt.Println("you took",attacken2,"damage")
+												hp1 = hp1-attacken2
+												time.Sleep(1 * time.Second)	
+												if hp1 <= 0 {
+													fmt.Println("You Died")
+													//check = 2
+													break
+												}
+											}
+										} else {
+											fmt.Println("attack missed")
+												time.Sleep(1 * time.Second)	
+												continue
+										}
+									}
+									if rpoip != 0 {
+										hp2 = hp2 - 10
+										rpoip--
+										time.Sleep(1 * time.Second)
+										fmt.Println("Enemy poisoned 10 damage")
+										time.Sleep(1 * time.Second)
+										if hp2 <= 0 {
+											fmt.Println("You Win")
+											break
+										}	
+									}
+									if rcursep != 0 {
+										if rcursep == 1 {
+											hp2 = hp2 - 150
+											time.Sleep(1 * time.Second)
+											fmt.Println("Enemy took 150 damage.")
+											time.Sleep(1 * time.Second)
+											rcursep = 0
+											if hp2 <= 0 {
+												fmt.Println("You Win")
+												break
+											}	
+										}
+										rcursep--
+										time.Sleep(1 * time.Second)
+										fmt.Println(rcursep,"turns left")
+										time.Sleep(1 * time.Second)
+									}
+								}
+								hp1 = hp1or
+								time.Sleep(1 * time.Second)
+								fmt.Println("You gained 50 coins")
+								time.Sleep(1 * time.Second)
+								mon = mon + 50
+								fmt.Println("Total coins:",mon)
+								time.Sleep(4 * time.Second)
+								fmt.Println("The spider dies and he drops a spider eye, you can either use it for a weapon upgrade or magic, which do you choose?")
+								time.Sleep(2 * time.Second)
+								fmt.Println("1.Weapon")
+								fmt.Println("2.Magic")
+								fmt.Scanln(&b)
+								time.Sleep(2 * time.Second)
+								if b == 1 {
+									attack1 = attack1 + 20
+									attack2 = attack2 + 20
+									attack4 = attack4 + 20
+									fmt.Println("Weapon upgraded")
+								} else {
+									attack3 = attack3 + 10
+									fmt.Println("Magic upgraded")
+								}
+								time.Sleep(2 * time.Second)
+						}
+				} else {
+					fmt.Println("You climb up Mount Olympus to start your quest.")
+					time.Sleep(4 * time.Second)
+					fmt.Println("it's been two years since you visited this place, in those years Zeus was killed in a battle.")
+					time.Sleep(4 * time.Second)
+					fmt.Println("Now demons control Mount Olympus so you must find the demon that's in charge, and kill him.")
+					time.Sleep(4 * time.Second)
+					fmt.Println("You suddenly find yourself in front of a cursed minion.")
+					time.Sleep(4 * time.Second)
+					hp1 = hp1or
+					for battle1 := 1 ;; battle1++ {
+						if battle1 % 10 == 0 {
+							fmt.Println("ultimate attack is ready")
+							time.Sleep(1 * time.Second)
+							fmt.Println("would you like to use ultimate attack")
+							fmt.Println("1.Yes")
+							fmt.Println("2.no")
+							fmt.Scanln(&b)
+							if b == 1 {
+								time.Sleep(1 * time.Second)
+								fmt.Println("using ultimate attack")
+								time.Sleep(5 * time.Second)
+								var s = time.Now().UnixNano()
+								rand.Seed(s)
+								var random = rand.Intn(8)
+								if random == 3 {
+									hp2 = hp2 - attack4 * 3 / 2
+									fmt.Println("Critical Hit")
+									time.Sleep(1 * time.Second)
+									fmt.Println("Enemy took",attack4 + (attack4 / 2),"damage")
+									if hp2 <= 0 {
+										fmt.Println("You Win")
+										break
+									}	
+								}else {
+									hp2 = hp2 - attack4
+									fmt.Println("Enemy took",attack4,"damage")
+									if hp2 <= 0 {
+										fmt.Println("You Win")
+										break
+									}
+								}
+							} else if b == 2 {
+								time.Sleep(1 * time.Second)
+								continue
+							} else {
+								time.Sleep(1 * time.Second)
+								fmt.Println("sorry that is an invalid command")
+								time.Sleep(1 * time.Second)
+								continue
+							}
+						}
+						fmt.Println("your hp",hp1,"          enemy hp",hp2)
+						fmt.Println()
+						fmt.Println("choose your attack")
+						fmt.Println("1.light attack ",attack1,"damage 100% accuracy")
+						fmt.Println("2.heavy attack ",attack2,"damage 75% accuracy")
+						fmt.Println("3.heal",attack3,"health 100% accuracy")
+						fmt.Println("4.dark magic 100% accuracy")
+						fmt.Scanln(&a)
+						if a == 1 {
+							var s = time.Now().UnixNano()
+							rand.Seed(s)
+							var random = rand.Intn(8)
+							if random == 0 {
+								hp2 = hp2 - attack1 * 3 / 2
+								fmt.Println("Critical Hit")
+								time.Sleep(1 * time.Second)
+								fmt.Println("Enemy took",attack1 + (attack1 / 2),"damage")
+								time.Sleep(1 * time.Second)
+								if hp2 <= 0 {
+									fmt.Println("You Win")
+									break
+								}	
+							}else {
+								time.Sleep(1 * time.Second)
+								fmt.Println("Enemy took",attack1,"damage")
+								hp2 = hp2 - attack1
+								time.Sleep(1 * time.Second)
+								if hp2 <= 0 {
+									fmt.Println("You Win")
+									break
+								}
+							}
+						} else if a == 2 {
+							var s = time.Now().UnixNano()
+							rand.Seed(s)
+							var random = rand.Intn(3)
+							if random == 1 || random == 2 || random == 3 {
+								var s = time.Now().UnixNano()
+								rand.Seed(s)
+								var random = rand.Intn(8)
+								if random == 3 {
+									hp2 = hp2 - attack2 * 3 / 2
+									fmt.Println("Critical Hit")
+									time.Sleep(1 * time.Second)
+									fmt.Println("Enemy took",attack2 + (attack2 / 2),"damage")
+									time.Sleep(1 * time.Second)
+									if hp2 <= 0 {
+										fmt.Println("You Win")
+										break
+									}	
+								}else {
+								time.Sleep(1 * time.Second)
+								hp2 = hp2 - attack2
+								fmt.Println("Enemy took",attack2,"damage")
+								time.Sleep(1 * time.Second)
+								if hp2 <= 0 {
+									fmt.Println("You Win")
+									break
+								}
+								}
+							} else {
+								time.Sleep(1 * time.Second)
+								fmt.Println("attack missed")
+								time.Sleep(1 * time.Second)
+							}
+						} else if a == 3 {
+							if hp1 == hp1or {
+								time.Sleep(1 * time.Second)
+								fmt.Println("You're not low enough to heal")
+								time.Sleep(1 * time.Second)
+							} else if hp1 >= (hp1or - attack3){
+								time.Sleep(1 * time.Second)
+								hp1 = hp1or
+								fmt.Println("You have been healed to max")
+								time.Sleep(1 * time.Second)
+							} else {
+								time.Sleep(1 * time.Second)
+								hp1 = hp1 + attack3
+								fmt.Println("You have been healed",attack3,"health")
+								time.Sleep(1 * time.Second)
+							}
+						} else if a == 4 {
+							time.Sleep(1 * time.Second)
+							fmt.Println("Which potion would you like to use")
+							fmt.Println("1.Poison:",poip)
+							fmt.Println("2.Curse",cursep)
+							fmt.Println("3.Life Steal",hpst)
+							fmt.Scanln(&b)
+							time.Sleep(1 * time.Second)
+							if b == 1 {
+								if poip == 0 {
+									time.Sleep(1 * time.Second)
+									fmt.Println("Sorry you don't have this item")
+									time.Sleep(1 * time.Second)
+									continue
+								} else {
+									poip--
+									time.Sleep(1 * time.Second)
+									rpoip = 5
+								}
+							} else if b == 2 {
+								if cursep == 0 {
+									time.Sleep(1 * time.Second)
+									fmt.Println("Sorry you don't have this item")
+									time.Sleep(1 * time.Second)
+									continue
+								} else {
+									cursep--
+									time.Sleep(1 * time.Second)
+									rcursep = 10
+								}
+							} else if b == 3 {
+								if hpst == 0 {
+									time.Sleep(1 * time.Second)
+									fmt.Println("Sorry you don't have this item")
+									time.Sleep(1 * time.Second)
+									continue
+								} else {
+									hpst--
+									if hp1 == hp1or {
+										hp2 = hp2 - 30
+										time.Sleep(1 * time.Second)
+										fmt.Println("You're not low enough to heal")
+										time.Sleep(1 * time.Second)
+										fmt.Println("Enemy took 30 damage")
+									} else if hp1 >= (hp1or - 30){
+										time.Sleep(1 * time.Second)
+										hp1 = hp1or
+										hp2 = hp2 - 30
+										fmt.Println("You have been healed to max")
+										time.Sleep(1 * time.Second)
+										fmt.Println("Enemy took 30 damage")
+										if hp2 <= 0 {
+											fmt.Println("You Win")
+											break
+										}
+									} else {
+										time.Sleep(1 * time.Second)
+										hp1 = hp1 + 30
+										hp2 = hp2 - 30
+										fmt.Println("You stole 30 hp")
+										if hp2 <= 0 {
+											fmt.Println("You Win")
+											break
+										}
+									}
+								}
+							}
+						} else {
+							fmt.Println("Sorry that is an invalid command")
+						}
+						var s = time.Now().UnixNano()
+						rand.Seed(s)
+						var random = rand.Intn(5)
+						if random == 3 {
+							if hp1 == hp1or / 2 {
+								hp1 = hp1 + pethe
+								time.Sleep(1 * time.Second)
+								fmt.Println("You have been healed",pethe,"hp")
+							} else {
+								hp2 = hp2 - petat
+								time.Sleep(1 * time.Second)
+								fmt.Println("Enemy took",petat,"damage")
+							}
+							if hp2 <= 0 {
+								fmt.Println("You Win")
+								break
+							}	
+						}
+						time.Sleep(1 * time.Second)
+						fmt.Println("enemy is attacking")
+						time.Sleep(1 * time.Second)
+						if hp2 <= (hp2or / 3) && hp1 > attacken2 {
+							time.Sleep(1 * time.Second)
+							hp2 = hp2 + attacken3
+							fmt.Println("enemy has been healed",attacken3,"health")
+							time.Sleep(1 * time.Second)
+							continue
+						}
+						if hp1 <= attacken1 || hp1 <= attacken1 * 2 && hp2 > hp1 {
+							var s = time.Now().UnixNano()
+							rand.Seed(s)
+							var random = rand.Intn(8)
+							if random == 0 {
+								hp1 = hp1 - attacken1 * 3 / 2
+								fmt.Println("Critical Hit")
+								time.Sleep(1 * time.Second)
+								fmt.Println("you took",attacken1 + (attacken1 / 2),"damage")
+								time.Sleep(1 * time.Second)
+								if hp1 <= 0 {
+									fmt.Println("You Died")
+									//check = 2
+									break
+								}	
+							}else {
+								fmt.Println("you took",attacken1,"damage")
+								hp1 = hp1-attacken1
+								time.Sleep(1 * time.Second)
+								if hp1 <= 0 {
+									fmt.Println("You Died")
+									//check = 2
+									break
+								}
+							}
+						} else {
+							var b = time.Now().UnixNano()
+							rand.Seed(b)
+							var random3 = rand.Intn(5)
+								if random3 == 1 || random3 == 2 || random3 == 3 {
+									var s = time.Now().UnixNano()
+									rand.Seed(s)
+									var random = rand.Intn(8)
+									if random == 0 {
+										hp1 = hp1 - attacken2 * 3 / 2
+										fmt.Println("Critical Hit")
+										time.Sleep(1 * time.Second)
+										fmt.Println("you took",attacken2 + (attacken2 / 2),"damage")
+										time.Sleep(1 * time.Second)
+										if hp1 <= 0 {
+											fmt.Println("You Died")
+											//check = 2
+											break
+										}	
+									}else {
+										fmt.Println("you took",attacken2,"damage")
+										hp1 = hp1-attacken2
+										time.Sleep(1 * time.Second)	
+										if hp1 <= 0 {
+											fmt.Println("You Died")
+											//check = 2
+											break
+										}
+									}
+								} else {
+									fmt.Println("attack missed")
+										time.Sleep(1 * time.Second)	
+										continue
+								}
+							}
+							if rpoip != 0 {
+								hp2 = hp2 - 10
+								rpoip--
+								time.Sleep(1 * time.Second)
+								fmt.Println("Enemy poisoned 10 damage")
+								time.Sleep(1 * time.Second)
+								if hp2 <= 0 {
+									fmt.Println("You Win")
+									break
+								}	
+							}
+							if rcursep != 0 {
+								if rcursep == 1 {
+									hp2 = hp2 - 150
+									time.Sleep(1 * time.Second)
+									fmt.Println("Enemy took 150 damage.")
+									time.Sleep(1 * time.Second)
+									rcursep = 0
+									if hp2 <= 0 {
+										fmt.Println("You Win")
+										break
+									}	
+								}
+								rcursep--
+								time.Sleep(1 * time.Second)
+								fmt.Println(rcursep,"turns left")
+								time.Sleep(1 * time.Second)
+							}
+						}
+						hp1or = hp1or + 20
+						hp1 = hp1or
+						time.Sleep(1 * time.Second)
+						fmt.Println("You gained 100 coins")
+						time.Sleep(1 * time.Second)
+						mon = mon + 100
+						fmt.Println("Total coins:",mon)
+						time.Sleep(4 * time.Second)
+						
 				}
 			} else {
 				var c int
